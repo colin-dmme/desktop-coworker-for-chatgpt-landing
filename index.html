@@ -1,100 +1,124 @@
 <!doctype html>
-<html lang="vi" class="bg-slate-950">
+<html lang="vi" class="bg-slate-50">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bớt copy-paste, bớt mở từng file. Để ChatGPT làm việc với file và dự án trên máy bạn. Thử miễn phí 24 giờ sử dụng, gói 7 ngày chỉ 10.000đ." />
-    <meta name="theme-color" content="#07111f" />
+    <meta name="description" content="Không cần tải từng file lên ChatGPT. Chỉ cần chỉ thư mục hoặc tài liệu trên PC và nói kết quả bạn muốn. Dùng thử miễn phí, trả phí từ 10.000đ." />
+    <meta name="theme-color" content="#f8fafc" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Desktop Coworker for ChatGPT" />
-    <meta property="og:description" content="Để ChatGPT làm việc với file và dự án ngay trên máy bạn." />
+    <meta property="og:description" content="Chỉ chỗ cho ChatGPT Web, việc được làm ngay trên PC của bạn." />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>Desktop Coworker for ChatGPT — Để ChatGPT làm việc ngay trên máy bạn</title>
   </head>
-  <body class="overflow-x-hidden text-slate-200 antialiased">
-    <div class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[42rem] overflow-hidden">
-      <div class="grid-fade absolute inset-0"></div>
-      <div class="hero-orb absolute -left-20 top-0 h-80 w-80 rounded-full bg-cyan-400"></div>
-      <div class="hero-orb absolute right-0 top-20 h-96 w-96 rounded-full bg-indigo-500"></div>
+  <body class="overflow-x-hidden bg-slate-50 text-slate-700 antialiased">
+    <div class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[48rem] overflow-hidden">
+      <div class="soft-grid absolute inset-0"></div>
+      <div class="absolute -left-28 -top-20 h-80 w-80 rounded-full bg-blue-100/80 blur-3xl"></div>
+      <div class="absolute -right-24 top-8 h-96 w-96 rounded-full bg-sky-100/70 blur-3xl"></div>
     </div>
 
-    <header class="sticky top-0 z-50 border-b border-white/5 bg-[#07111f]/80 backdrop-blur-xl">
-      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
         <a href="#top" class="focus-ring flex min-w-0 items-center gap-3 rounded-lg">
-          <img src="/favicon.png" alt="Desktop Coworker" class="h-9 w-9 rounded-xl" />
+          <img src="/favicon.png" alt="Desktop Coworker" class="h-10 w-10 rounded-xl shadow-sm" />
           <div class="min-w-0">
-            <div class="truncate text-sm font-semibold text-white sm:text-base">Desktop Coworker</div>
+            <div class="truncate text-sm font-bold text-slate-900 sm:text-base">Desktop Coworker</div>
             <div class="hidden text-xs text-slate-500 sm:block">for ChatGPT</div>
           </div>
         </a>
 
-        <nav class="hidden items-center gap-7 text-sm text-slate-400 lg:flex">
-          <a href="#how" data-i18n="navHow" class="focus-ring rounded-md transition hover:text-white">Cách hoạt động</a>
-          <a href="#use-cases" data-i18n="navUse" class="focus-ring rounded-md transition hover:text-white">Việc có thể giao</a>
-          <a href="#pricing" data-i18n="navPrice" class="focus-ring rounded-md transition hover:text-white">Giá</a>
-          <a href="#faq" data-i18n="navFaq" class="focus-ring rounded-md transition hover:text-white">Hỏi đáp</a>
+        <nav class="hidden items-center gap-7 text-sm font-medium text-slate-600 lg:flex">
+          <a href="#how" data-i18n="navHow" class="focus-ring rounded-md transition hover:text-blue-700">Cách hoạt động</a>
+          <a href="#use-cases" data-i18n="navUse" class="focus-ring rounded-md transition hover:text-blue-700">Việc có thể giao</a>
+          <a href="#pricing" data-i18n="navPrice" class="focus-ring rounded-md transition hover:text-blue-700">Giá</a>
+          <a href="#faq" data-i18n="navFaq" class="focus-ring rounded-md transition hover:text-blue-700">Hỏi đáp</a>
         </nav>
 
         <div class="flex items-center gap-2">
-          <div class="flex rounded-xl border border-white/10 bg-white/5 p-1 text-xs font-semibold">
-            <button type="button" data-lang-switch="vi" aria-pressed="true" class="focus-ring rounded-lg px-2.5 py-1.5 text-slate-300">VI</button>
-            <button type="button" data-lang-switch="en" aria-pressed="false" class="focus-ring rounded-lg px-2.5 py-1.5 text-slate-300">EN</button>
+          <div class="flex rounded-xl border border-slate-200 bg-slate-100 p-1 text-xs font-semibold">
+            <button type="button" data-lang-switch="vi" aria-pressed="true" class="focus-ring rounded-lg px-2.5 py-1.5 text-slate-600">VI</button>
+            <button type="button" data-lang-switch="en" aria-pressed="false" class="focus-ring rounded-lg px-2.5 py-1.5 text-slate-600">EN</button>
           </div>
-          <a data-download target="_blank" rel="noopener" data-i18n="navDownload" class="focus-ring hidden rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-cyan-100 sm:inline-flex">Tải miễn phí</a>
+          <a data-download target="_blank" rel="noopener" data-i18n="navDownload" class="focus-ring hidden rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-blue-700 sm:inline-flex">Tải miễn phí</a>
         </div>
       </div>
     </header>
 
     <main id="top">
-      <section class="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-24 pt-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:pb-32 lg:pt-28">
+      <section class="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-24 pt-16 lg:grid-cols-[.96fr_1.04fr] lg:px-8 lg:pb-28 lg:pt-24">
         <div>
-          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/15 bg-cyan-300/5 px-3 py-1.5 text-xs font-bold tracking-[0.16em] text-cyan-200">
-            <span class="h-1.5 w-1.5 rounded-full bg-cyan-300"></span>
-            <span data-i18n="eyebrow">ChatGPT trả lời rất giỏi. Giờ để nó làm luôn.</span>
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3.5 py-2 text-xs font-bold tracking-[0.12em] text-blue-700">
+            <span class="flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-[10px] text-white">✓</span>
+            <span data-i18n="eyebrow">Bạn chỉ cần chỉ chỗ. ChatGPT lo phần còn lại.</span>
           </div>
-          <h1 data-i18n="heroTitle" class="max-w-4xl text-5xl font-black leading-[1.03] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl">
-            Đừng copy-paste công việc cho ChatGPT nữa.
+          <h1 data-i18n="heroTitle" class="max-w-4xl text-5xl font-black leading-[1.04] tracking-[-0.045em] text-slate-950 sm:text-6xl lg:text-[4.4rem]">
+            Bạn chỉ cần chỉ chỗ cho ChatGPT Web. Việc được làm ngay trên PC của bạn.
           </h1>
-          <p data-i18n="heroText" class="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-            Cho ChatGPT làm việc với file, thư mục và project ngay trên máy bạn — đọc, chỉnh, chạy các bước cần thiết và kiểm tra lại. Bạn chỉ cần nói kết quả muốn có.
+          <p data-i18n="heroText" class="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+            Không còn phải tải lên từng file. Chỉ cần copy đường dẫn file hoặc thư mục trên PC, dán thẳng vào ChatGPT và nói kết quả bạn muốn. Desktop Coworker giúp ChatGPT đọc, đối chiếu, sắp xếp và xử lý ngay trên máy của bạn.
           </p>
+          <div class="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-slate-600">
+            <span class="flex items-center gap-2"><span class="check-dot flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-xs text-emerald-600">✓</span><span data-i18n="heroPill1">Dành cho Windows</span></span>
+            <span class="flex items-center gap-2"><span class="check-dot flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-xs text-emerald-600">✓</span><span data-i18n="heroPill2">Dùng thử miễn phí</span></span>
+            <span class="flex items-center gap-2"><span class="check-dot flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-xs text-emerald-600">✓</span><span data-i18n="heroPill3">Bắt đầu từ 10.000đ</span></span>
+          </div>
           <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a data-download target="_blank" rel="noopener" class="focus-ring inline-flex items-center justify-center gap-2 rounded-2xl bg-cyan-300 px-6 py-4 text-base font-black text-slate-950 shadow-[0_18px_60px_rgba(34,211,238,.2)] transition hover:bg-cyan-200">
+            <a data-download target="_blank" rel="noopener" class="focus-ring inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 py-4 text-base font-black text-white shadow-[0_12px_32px_rgba(37,99,235,.2)] transition hover:bg-blue-700">
               <svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span data-i18n="heroPrimary">Tải miễn phí cho Windows</span>
             </a>
-            <a href="#use-cases" class="focus-ring inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-base font-bold text-white transition hover:bg-white/10" data-i18n="heroSecondary">Xem nó giúp được gì</a>
+            <a href="#use-cases" class="focus-ring inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-4 text-base font-bold text-slate-800 shadow-sm transition hover:border-blue-200 hover:bg-blue-50" data-i18n="heroSecondary">Xem nó giúp được gì</a>
           </div>
-          <p data-i18n="heroNote" class="mt-4 text-sm text-slate-500">24 giờ sử dụng miễn phí · Không cần nhập thẻ · Gói 7 ngày chỉ 10.000đ</p>
+          <p data-i18n="heroNote" class="mt-4 text-sm text-slate-500">Dùng thử miễn phí · Bắt đầu trả phí từ 10.000đ · Chi tiết gói xem ngay trong app</p>
         </div>
 
         <div class="relative mx-auto w-full max-w-2xl lg:max-w-none">
-          <div class="absolute -inset-10 -z-10 rounded-full bg-cyan-400/10 blur-3xl"></div>
-          <div class="glass overflow-hidden rounded-[2rem] p-3 sm:p-4">
-            <div class="overflow-hidden rounded-[1.45rem] border border-white/10 bg-[#0a1626]">
-              <div class="flex items-center justify-between border-b border-white/10 px-4 py-3">
-                <div class="flex items-center gap-2">
-                  <span class="h-2.5 w-2.5 rounded-full bg-rose-400/80"></span>
-                  <span class="h-2.5 w-2.5 rounded-full bg-amber-300/80"></span>
-                  <span class="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+          <div class="absolute -inset-8 -z-10 rounded-[3rem] bg-blue-100/55 blur-3xl"></div>
+          <div class="office-card overflow-hidden rounded-[2rem] p-3 sm:p-4">
+            <div class="overflow-hidden rounded-[1.45rem] border border-slate-200 bg-white">
+              <div class="flex items-center justify-between border-b border-slate-200 bg-slate-50/80 px-5 py-4">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-600 text-white">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h5L12 6h6.5A1.5 1.5 0 0 1 20 7.5v10A1.5 1.5 0 0 1 18.5 19h-13A1.5 1.5 0 0 1 4 17.5z" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-sm font-bold text-slate-900" data-i18n="heroWorkspaceTitle">Công việc hôm nay</div>
+                    <div class="text-xs text-slate-500" data-i18n="heroWorkspaceSub">Desktop Coworker đang hỗ trợ</div>
+                  </div>
                 </div>
-                <span data-i18n="screenLabel" class="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-500">Một việc thật, làm ngay trong ChatGPT</span>
+                <span class="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700" data-i18n="heroConnected">Đã kết nối</span>
               </div>
-              <div class="space-y-5 p-5 sm:p-7">
-                <div class="ml-auto max-w-[88%] rounded-2xl rounded-tr-md bg-slate-100 px-4 py-3.5 text-sm font-medium leading-6 text-slate-900 shadow-lg" data-i18n="screenPrompt">“Project này đang lỗi. Tìm nguyên nhân, sửa giúp tôi rồi kiểm tra lại.”</div>
-                <div class="max-w-[92%] rounded-2xl rounded-tl-md border border-white/10 bg-white/[0.045] p-4">
-                  <div class="mb-4 flex items-center gap-2 text-xs font-bold text-cyan-200">
-                    <span class="flex h-6 w-6 items-center justify-center rounded-lg bg-cyan-300/10">✓</span>
-                    Desktop Coworker
+
+              <div class="p-5 sm:p-7">
+                <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-4 sm:p-5">
+                  <div class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-blue-700">
+                    <span class="flex h-6 w-6 items-center justify-center rounded-lg bg-blue-100">✦</span>
+                    <span data-i18n="screenLabel">Một việc thật, làm ngay trong ChatGPT</span>
                   </div>
-                  <div class="space-y-3 text-sm text-slate-300">
-                    <div class="flex items-center gap-3"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400/10 text-emerald-300">✓</span><span data-i18n="screenStep1">Đã đọc project</span></div>
-                    <div class="flex items-center gap-3"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400/10 text-emerald-300">✓</span><span data-i18n="screenStep2">Đã tìm thấy lỗi</span></div>
-                    <div class="flex items-center gap-3"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400/10 text-emerald-300">✓</span><span data-i18n="screenStep3">Đã sửa và kiểm tra lại</span></div>
+                  <p data-i18n="screenPrompt" class="text-base font-semibold leading-7 text-slate-900">“Các báo cáo ở đây D:\BaoCao\Thang8\. Đọc toàn bộ, tìm những điểm quan trọng và làm cho tôi một bản tổng hợp ngắn gọn. Lưu thành file mới, không sửa file gốc.”</p>
+                </div>
+
+                <div class="mt-5 grid gap-3 sm:grid-cols-3">
+                  <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-violet-50 text-violet-600">📄</div>
+                    <div class="text-sm font-bold text-slate-900" data-i18n="screenStep1">Đã đọc tài liệu</div>
+                    <div class="mt-1 text-xs text-slate-500" data-i18n="heroMeta1">Tài liệu & file</div>
+                  </div>
+                  <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-amber-50 text-amber-600">🔎</div>
+                    <div class="text-sm font-bold text-slate-900" data-i18n="screenStep2">Đã tổng hợp nội dung</div>
+                    <div class="mt-1 text-xs text-slate-500" data-i18n="heroMeta2">Đã phân tích</div>
+                  </div>
+                  <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">✓</div>
+                    <div class="text-sm font-bold text-slate-900" data-i18n="screenStep3">Bản tóm tắt đã sẵn sàng</div>
+                    <div class="mt-1 text-xs text-slate-500" data-i18n="heroMeta3">Hoàn tất</div>
                   </div>
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-white/10 bg-slate-950/70 p-2">
-                  <img src="/app-overview.png" alt="Desktop Coworker Control Center" class="w-full rounded-xl opacity-90" loading="eager" />
+
+                <div class="mt-5 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-2 shadow-inner">
+                  <img src="/app-overview.png" alt="Desktop Coworker Control Center" class="w-full rounded-xl" loading="eager" />
                 </div>
               </div>
             </div>
@@ -102,169 +126,245 @@
         </div>
       </section>
 
-      <section class="border-y border-white/5 bg-white/[0.018] py-24 lg:py-28">
+      <section class="border-y border-slate-200 bg-white py-24 lg:py-28">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
           <div class="max-w-3xl">
-            <p data-i18n="painEyebrow" class="text-xs font-black tracking-[0.2em] text-cyan-300">VẤN ĐỀ KHÔNG NẰM Ở CÂU TRẢ LỜI</p>
-            <h2 data-i18n="painTitle" class="mt-4 text-3xl font-black tracking-tight text-white sm:text-5xl">Phần mất thời gian nhất là những việc bạn vẫn phải tự làm sau đó.</h2>
-            <p data-i18n="painText" class="mt-6 text-lg leading-8 text-slate-400">ChatGPT có thể nói chính xác phải làm gì. Nhưng nếu bạn vẫn phải tự tìm file, tải lên, copy kết quả về, mở từng thư mục và bấm từng bước thì công việc vẫn chưa thật sự nhẹ đi.</p>
+            <p data-i18n="painEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">VẤN ĐỀ KHÔNG NẰM Ở CÂU TRẢ LỜI</p>
+            <h2 data-i18n="painTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Phần mất thời gian nhất là những việc bạn vẫn phải tự làm sau đó.</h2>
+            <p data-i18n="painText" class="mt-6 text-lg leading-8 text-slate-600">ChatGPT có thể nói chính xác phải làm gì. Nhưng nếu bạn vẫn phải tự tìm file, tải lên, copy kết quả về, mở từng thư mục và bấm từng bước thì công việc vẫn chưa thật sự nhẹ đi.</p>
           </div>
-          <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-6"><div class="mb-5 text-2xl">📚</div><h3 data-i18n="pain1Title" class="font-bold text-white">Tài liệu nằm khắp máy</h3><p data-i18n="pain1Text" class="mt-2 text-sm leading-6 text-slate-400">Không muốn tải từng file lên rồi hỏi lại từ đầu.</p></article>
-            <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-6"><div class="mb-5 text-2xl">🧩</div><h3 data-i18n="pain2Title" class="font-bold text-white">Project đang lỗi</h3><p data-i18n="pain2Text" class="mt-2 text-sm leading-6 text-slate-400">Không biết phải copy đoạn code nào để ChatGPT hiểu đủ ngữ cảnh.</p></article>
-            <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-6"><div class="mb-5 text-2xl">🔁</div><h3 data-i18n="pain3Title" class="font-bold text-white">Việc lặp lại quá nhiều bước</h3><p data-i18n="pain3Text" class="mt-2 text-sm leading-6 text-slate-400">Ngày nào cũng mở đúng những file đó và làm lại đúng quy trình đó.</p></article>
-            <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-6"><div class="mb-5 text-2xl">🖱️</div><h3 data-i18n="pain4Title" class="font-bold text-white">ChatGPT chỉ hướng dẫn</h3><p data-i18n="pain4Text" class="mt-2 text-sm leading-6 text-slate-400">Cuối cùng bạn vẫn là người phải thực hiện mọi thao tác trên máy.</p></article>
+          <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <article class="feature-card rounded-3xl border border-slate-200 bg-slate-50 p-6"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-50 text-2xl">📚</div><h3 data-i18n="pain1Title" class="font-bold text-slate-900">Tài liệu nằm khắp máy</h3><p data-i18n="pain1Text" class="mt-2 text-sm leading-6 text-slate-600">Không muốn tải từng file lên rồi hỏi lại từ đầu.</p></article>
+            <article class="feature-card rounded-3xl border border-slate-200 bg-slate-50 p-6"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-50 text-2xl">📚</div><h3 data-i18n="pain2Title" class="font-bold text-slate-900">Nhiều file phải đối chiếu</h3><p data-i18n="pain2Text" class="mt-2 text-sm leading-6 text-slate-600">Mở từng tài liệu, dò từng phiên bản rồi tự ghép thông tin rất mất thời gian.</p></article>
+            <article class="feature-card rounded-3xl border border-slate-200 bg-slate-50 p-6"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-50 text-2xl">🔁</div><h3 data-i18n="pain3Title" class="font-bold text-slate-900">Việc lặp lại quá nhiều bước</h3><p data-i18n="pain3Text" class="mt-2 text-sm leading-6 text-slate-600">Ngày nào cũng mở đúng những file đó và làm lại đúng quy trình đó.</p></article>
+            <article class="feature-card rounded-3xl border border-slate-200 bg-slate-50 p-6"><div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-50 text-2xl">🖱️</div><h3 data-i18n="pain4Title" class="font-bold text-slate-900">ChatGPT chỉ hướng dẫn</h3><p data-i18n="pain4Text" class="mt-2 text-sm leading-6 text-slate-600">Cuối cùng bạn vẫn là người phải thực hiện mọi thao tác trên máy.</p></article>
           </div>
         </div>
       </section>
 
       <section id="use-cases" class="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
-        <div class="grid gap-14 lg:grid-cols-[.75fr_1.25fr] lg:items-start">
-          <div class="lg:sticky lg:top-28">
-            <p data-i18n="promptsEyebrow" class="text-xs font-black tracking-[0.2em] text-cyan-300">CỨ NÓI NHƯ ĐANG GIAO VIỆC</p>
-            <h2 data-i18n="promptsTitle" class="mt-4 text-3xl font-black tracking-tight text-white sm:text-5xl">Không cần học câu lệnh kỹ thuật.</h2>
-          </div>
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div class="prompt-card min-h-48 rounded-3xl border border-white/10 bg-white/[0.035] p-6 text-lg font-semibold leading-8 text-white" data-i18n="prompt1">“Trong thư mục Hợp đồng, tìm các file sửa trong tháng này và tóm tắt phần thay đổi.”</div>
-            <div class="prompt-card min-h-48 rounded-3xl border border-white/10 bg-white/[0.035] p-6 text-lg font-semibold leading-8 text-white" data-i18n="prompt2">“Đống ảnh này tên lộn xộn quá. Đổi tên theo ngày và chia lại thư mục giúp tôi.”</div>
-            <div class="prompt-card min-h-48 rounded-3xl border border-white/10 bg-white/[0.035] p-6 text-lg font-semibold leading-8 text-white" data-i18n="prompt3">“Đọc các báo cáo trong thư mục này rồi tạo cho tôi một bản tổng hợp.”</div>
-            <div class="prompt-card min-h-48 rounded-3xl border border-white/10 bg-white/[0.035] p-6 text-lg font-semibold leading-8 text-white" data-i18n="prompt4">“Project này không chạy. Xem nguyên nhân, sửa rồi chạy kiểm tra lại.”</div>
+        <div class="mx-auto max-w-4xl text-center">
+          <p data-i18n="casesEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">CHỈ CHỖ → GIAO VIỆC → NHẬN KẾT QUẢ</p>
+          <h2 data-i18n="casesTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Bạn nói như đang giao việc cho một đồng nghiệp.</h2>
+          <p data-i18n="casesText" class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600">Không cần câu lệnh kỹ thuật. Copy đường dẫn file hoặc thư mục, dán thẳng vào tin nhắn rồi nói kết quả bạn cần. Chọn một ví dụ bên dưới để xem cách dùng thật.</p>
+        </div>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-2" data-case-tabs></div>
+
+        <div class="mt-8 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_24px_70px_rgba(15,23,42,.08)]">
+          <div class="grid lg:grid-cols-[1.05fr_.95fr]">
+            <div class="border-b border-slate-200 p-6 sm:p-8 lg:border-b-0 lg:border-r lg:p-10">
+              <div class="flex items-center gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text-xl" data-case-icon>📁</span>
+                <div>
+                  <div data-i18n="caseRequestLabel" class="text-xs font-black uppercase tracking-[0.14em] text-blue-600">1. Bạn chỉ cần nói</div>
+                </div>
+              </div>
+              <blockquote class="mt-6 rounded-2xl border border-blue-100 bg-blue-50/70 p-5 text-lg font-semibold leading-8 text-slate-900" data-case-prompt></blockquote>
+
+              <div class="mt-7 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-rose-100 bg-rose-50/50 p-5">
+                  <div data-i18n="caseOldLabel" class="text-xs font-black uppercase tracking-[0.14em] text-rose-600">2. Trước đây bạn phải tự làm</div>
+                  <p class="mt-3 text-sm leading-6 text-slate-700" data-case-old></p>
+                </div>
+                <div class="rounded-2xl border border-emerald-100 bg-emerald-50/55 p-5">
+                  <div data-i18n="caseNewLabel" class="text-xs font-black uppercase tracking-[0.14em] text-emerald-700">3. Desktop Coworker giúp làm</div>
+                  <p class="mt-3 text-sm leading-6 text-slate-700" data-case-new></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-50/70 p-6 sm:p-8 lg:p-10">
+              <div data-i18n="caseResultLabel" class="text-xs font-black uppercase tracking-[0.14em] text-slate-500">4. Bạn nhận được</div>
+              <h3 class="mt-3 text-2xl font-black tracking-tight text-slate-950" data-case-title></h3>
+              <p class="mt-3 leading-7 text-slate-600" data-case-result></p>
+
+              <div class="mt-7 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                <div class="flex items-center justify-between gap-3 border-b border-slate-100 pb-4">
+                  <div class="flex items-center gap-2 text-sm font-bold text-slate-900"><span>📂</span><span data-case-folder-short></span></div>
+                  <span data-i18n="caseIllustration" class="rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">Ví dụ minh họa</span>
+                </div>
+                <div class="mt-4 space-y-2.5 text-sm" data-case-files></div>
+              </div>
+
+              <div class="mt-5 flex items-center gap-3 rounded-2xl border border-blue-100 bg-blue-50 p-4 text-sm text-blue-900">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 font-bold text-white">✓</span>
+                <span data-case-proof></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="how" class="border-y border-white/5 bg-[#091625] py-24 lg:py-28">
+      <section class="border-y border-slate-200 bg-white py-24 lg:py-28">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="max-w-4xl">
+            <p data-i18n="whyEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">VÌ SAO NÓ KHÁC VỚI CHỈ CHAT NHƯ BÌNH THƯỜNG</p>
+            <h2 data-i18n="whyTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">ChatGPT không chỉ biết câu trả lời. Nó có chỗ để làm việc.</h2>
+            <p data-i18n="whyText" class="mt-6 max-w-3xl text-lg leading-8 text-slate-600">Desktop Coworker nối cuộc chat với đúng file và thư mục bạn cho phép, để bớt phần tải lên, copy qua lại và làm tay sau câu trả lời.</p>
+          </div>
+
+          <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-50 text-2xl">📁</div>
+              <h3 data-i18n="why1Title" class="font-bold text-slate-900">File vẫn ở đúng chỗ</h3>
+              <p data-i18n="why1Text" class="mt-2 text-sm leading-6 text-slate-600">Không cần gom rồi tải từng file lên chat. Bạn chỉ đúng thư mục đang làm việc.</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-50 text-2xl">📚</div>
+              <h3 data-i18n="why2Title" class="font-bold text-slate-900">Đọc được nhiều tài liệu cùng lúc</h3>
+              <p data-i18n="why2Text" class="mt-2 text-sm leading-6 text-slate-600">Word, Excel, PDF, ghi chú và các file liên quan trong phạm vi bạn cho phép.</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-50 text-2xl">✅</div>
+              <h3 data-i18n="why3Title" class="font-bold text-slate-900">Làm xong việc, không chỉ chỉ cách</h3>
+              <p data-i18n="why3Text" class="mt-2 text-sm leading-6 text-slate-600">Có thể tạo file tổng hợp, sắp xếp thư mục, chỉnh tài liệu hoặc thực hiện các bước bạn yêu cầu.</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-50 text-2xl">🔎</div>
+              <h3 data-i18n="why4Title" class="font-bold text-slate-900">Dễ kiểm tra lại căn cứ</h3>
+              <p data-i18n="why4Text" class="mt-2 text-sm leading-6 text-slate-600">Bạn có thể yêu cầu ghi rõ file nào, phần nào hoặc dữ liệu nào được dùng để đi đến kết quả.</p>
+            </article>
+          </div>
+
+          <div class="mt-10 grid gap-5 lg:grid-cols-2">
+            <div class="rounded-3xl border border-rose-100 bg-rose-50/45 p-7 sm:p-8">
+              <p data-i18n="beforeLabel" class="text-xs font-black tracking-[0.16em] text-rose-600">TRƯỚC ĐÂY</p>
+              <p data-i18n="beforeText" class="mt-4 text-lg font-semibold leading-8 text-slate-800">Tìm file → tải lên → copy câu trả lời → mở file gốc → chỉnh lại → lưu bản mới.</p>
+              <p data-i18n="beforeNote" class="mt-4 text-sm leading-6 text-rose-700">ChatGPT trả lời xong nhưng phần thao tác vẫn nằm ở bạn.</p>
+            </div>
+            <div class="rounded-3xl border-2 border-blue-500 bg-blue-50/55 p-7 shadow-[0_18px_45px_rgba(37,99,235,.09)] sm:p-8">
+              <p data-i18n="nowLabel" class="text-xs font-black tracking-[0.16em] text-blue-700">BÂY GIỜ</p>
+              <p data-i18n="nowText" class="mt-4 text-lg font-semibold leading-8 text-slate-900">Chỉ chỗ → nói kết quả cần → ChatGPT làm trong phạm vi được phép → báo lại những gì đã làm.</p>
+              <p data-i18n="nowNote" class="mt-4 text-sm font-semibold leading-6 text-emerald-700">Bạn dành thời gian để xem và quyết định, thay vì làm tay từng bước.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="border-y border-slate-200 bg-blue-50/55 py-24 lg:py-28">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
           <div class="mx-auto max-w-3xl text-center">
-            <p data-i18n="howEyebrow" class="text-xs font-black tracking-[0.2em] text-cyan-300">CÀI MỘT LẦN</p>
-            <h2 data-i18n="howTitle" class="mt-4 text-3xl font-black tracking-tight text-white sm:text-5xl">Sau đó cứ dùng ChatGPT như bình thường.</h2>
+            <p data-i18n="howEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">CÀI MỘT LẦN</p>
+            <h2 data-i18n="howTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Sau đó cứ dùng ChatGPT như bình thường.</h2>
           </div>
           <div class="mt-14 grid gap-5 lg:grid-cols-3">
-            <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-7"><div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300 font-black text-slate-950">1</div><h3 data-i18n="how1Title" class="text-xl font-bold text-white">1. Cài ứng dụng</h3><p data-i18n="how1Text" class="mt-3 leading-7 text-slate-400">Tải file cài cho Windows và mở Desktop Coworker.</p></article>
-            <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-7"><div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300 font-black text-slate-950">2</div><h3 data-i18n="how2Title" class="text-xl font-bold text-white">2. Kết nối với ChatGPT</h3><p data-i18n="how2Text" class="mt-3 leading-7 text-slate-400">Trình hướng dẫn mới đi từng bước, có link trực tiếp, nút copy và hình minh họa. Bạn có thể dừng rồi làm tiếp sau.</p></article>
-            <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-7"><div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300 font-black text-slate-950">3</div><h3 data-i18n="how3Title" class="text-xl font-bold text-white">3. Giao việc trong chat</h3><p data-i18n="how3Text" class="mt-3 leading-7 text-slate-400">Nói việc muốn hoàn thành. ChatGPT có thể làm với những file và thư mục bạn cho phép.</p></article>
+            <article class="rounded-3xl border border-blue-100 bg-white p-7 shadow-sm"><div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600 font-black text-white">1</div><h3 data-i18n="how1Title" class="text-xl font-bold text-slate-900">1. Cài ứng dụng</h3><p data-i18n="how1Text" class="mt-3 leading-7 text-slate-600">Tải file cài cho Windows và mở Desktop Coworker.</p></article>
+            <article class="rounded-3xl border border-blue-100 bg-white p-7 shadow-sm"><div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600 font-black text-white">2</div><h3 data-i18n="how2Title" class="text-xl font-bold text-slate-900">2. Kết nối với ChatGPT</h3><p data-i18n="how2Text" class="mt-3 leading-7 text-slate-600">Trình hướng dẫn mới đi từng bước, có link trực tiếp, nút copy và hình minh họa. Bạn có thể dừng rồi làm tiếp sau.</p></article>
+            <article class="rounded-3xl border border-blue-100 bg-white p-7 shadow-sm"><div class="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600 font-black text-white">3</div><h3 data-i18n="how3Title" class="text-xl font-bold text-slate-900">3. Giao việc trong chat</h3><p data-i18n="how3Text" class="mt-3 leading-7 text-slate-600">Nói việc muốn hoàn thành. ChatGPT có thể làm với những file và thư mục bạn cho phép.</p></article>
           </div>
         </div>
       </section>
 
       <section class="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
         <div class="max-w-3xl">
-          <p data-i18n="outcomeEyebrow" class="text-xs font-black tracking-[0.2em] text-cyan-300">TỪ “CHỈ CÁCH” SANG “LÀM GIÚP”</p>
-          <h2 data-i18n="outcomeTitle" class="mt-4 text-3xl font-black tracking-tight text-white sm:text-5xl">Một công cụ, nhiều việc rất đời thường.</h2>
+          <p data-i18n="outcomeEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">TỪ “CHỈ CÁCH” SANG “LÀM GIÚP”</p>
+          <h2 data-i18n="outcomeTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Một công cụ, nhiều việc rất đời thường.</h2>
         </div>
         <div class="mt-12 grid gap-5 md:grid-cols-2">
-          <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-7"><div class="mb-5 text-3xl">🗂️</div><h3 data-i18n="outcome1Title" class="text-xl font-bold text-white">Đọc và tổng hợp cả thư mục</h3><p data-i18n="outcome1Text" class="mt-3 leading-7 text-slate-400">Tìm thông tin trong nhiều tài liệu, so sánh thay đổi, tạo bản tổng hợp mà không phải upload từng file.</p></article>
-          <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-7"><div class="mb-5 text-3xl">🧹</div><h3 data-i18n="outcome2Title" class="text-xl font-bold text-white">Dọn và đổi tên file hàng loạt</h3><p data-i18n="outcome2Text" class="mt-3 leading-7 text-slate-400">Sắp xếp thư mục, đổi tên, phân loại và xử lý những đống file lộn xộn.</p></article>
-          <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-7"><div class="mb-5 text-3xl">🛠️</div><h3 data-i18n="outcome3Title" class="text-xl font-bold text-white">Sửa project thật</h3><p data-i18n="outcome3Text" class="mt-3 leading-7 text-slate-400">Cho ChatGPT xem project đầy đủ, tìm lỗi, chỉnh file, chạy lệnh và kiểm tra kết quả.</p></article>
-          <article class="rounded-3xl border border-white/10 bg-white/[0.035] p-7"><div class="mb-5 text-3xl">⚡</div><h3 data-i18n="outcome4Title" class="text-xl font-bold text-white">Giao các quy trình nhiều bước</h3><p data-i18n="outcome4Text" class="mt-3 leading-7 text-slate-400">Thay vì nhận hướng dẫn rồi tự bấm, có thể để ChatGPT thực hiện nhiều bước liên tiếp giúp bạn.</p></article>
+          <article class="feature-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-2xl">🗂️</div><h3 data-i18n="outcome1Title" class="text-xl font-bold text-slate-900">Đọc và tổng hợp cả thư mục</h3><p data-i18n="outcome1Text" class="mt-3 leading-7 text-slate-600">Tìm thông tin trong nhiều tài liệu, so sánh thay đổi, tạo bản tổng hợp mà không phải upload từng file.</p></article>
+          <article class="feature-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-2xl">🧹</div><h3 data-i18n="outcome2Title" class="text-xl font-bold text-slate-900">Dọn và đổi tên file hàng loạt</h3><p data-i18n="outcome2Text" class="mt-3 leading-7 text-slate-600">Sắp xếp thư mục, đổi tên, phân loại và xử lý những đống file lộn xộn.</p></article>
+          <article class="feature-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-2xl">📝</div><h3 data-i18n="outcome3Title" class="text-xl font-bold text-slate-900">Soạn tài liệu theo mẫu có sẵn</h3><p data-i18n="outcome3Text" class="mt-3 leading-7 text-slate-600">Dùng mẫu cũ, quy định nội bộ và dữ liệu nguồn để tạo bản nháp mới mà không phải copy từng phần vào chat.</p></article>
+          <article class="feature-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-2xl">⚡</div><h3 data-i18n="outcome4Title" class="text-xl font-bold text-slate-900">Giao các quy trình nhiều bước</h3><p data-i18n="outcome4Text" class="mt-3 leading-7 text-slate-600">Thay vì nhận hướng dẫn rồi tự bấm, có thể để ChatGPT thực hiện nhiều bước liên tiếp giúp bạn.</p></article>
         </div>
       </section>
 
       <section class="mx-auto max-w-7xl px-5 pb-24 lg:px-8 lg:pb-32">
-        <div class="overflow-hidden rounded-[2rem] border border-cyan-300/15 bg-gradient-to-br from-cyan-300/[0.08] via-white/[0.025] to-indigo-400/[0.07] p-7 sm:p-10 lg:p-14">
+        <div class="overflow-hidden rounded-[2rem] border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-7 shadow-sm sm:p-10 lg:p-14">
           <div class="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
             <div>
-              <p data-i18n="safetyEyebrow" class="text-xs font-black tracking-[0.2em] text-cyan-300">BẠN VẪN GIỮ QUYỀN KIỂM SOÁT</p>
-              <h2 data-i18n="safetyTitle" class="mt-4 text-3xl font-black tracking-tight text-white sm:text-5xl">Cho phép đến đâu, làm đến đó.</h2>
-              <p data-i18n="safetyText" class="mt-5 text-lg leading-8 text-slate-400">Desktop Coworker có các lớp kiểm soát để bạn không phải đưa toàn bộ máy tính cho ChatGPT.</p>
+              <p data-i18n="safetyEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">BẠN VẪN GIỮ QUYỀN KIỂM SOÁT</p>
+              <h2 data-i18n="safetyTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Bạn quyết định nó được phép mở chỗ nào.</h2>
+              <p data-i18n="safetyText" class="mt-5 text-lg leading-8 text-slate-600">Không cần mở toàn bộ máy tính. Bạn có thể giới hạn đúng thư mục cần làm và chọn mức kiểm soát phù hợp với từng công việc.</p>
             </div>
             <ul class="grid gap-3 sm:grid-cols-2">
-              <li class="rounded-2xl border border-white/10 bg-slate-950/35 p-5"><span class="mb-3 block text-emerald-300">✓</span><span data-i18n="safety1" class="font-semibold text-white">Giới hạn phạm vi thư mục theo từng kết nối.</span></li>
-              <li class="rounded-2xl border border-white/10 bg-slate-950/35 p-5"><span class="mb-3 block text-emerald-300">✓</span><span data-i18n="safety2" class="font-semibold text-white">Có checkpoint để quay lại trước các thay đổi.</span></li>
-              <li class="rounded-2xl border border-white/10 bg-slate-950/35 p-5"><span class="mb-3 block text-emerald-300">✓</span><span data-i18n="safety3" class="font-semibold text-white">Có thể yêu cầu bạn duyệt trước thao tác chỉnh sửa hoặc chạy lệnh.</span></li>
-              <li class="rounded-2xl border border-white/10 bg-slate-950/35 p-5"><span class="mb-3 block text-emerald-300">✓</span><span data-i18n="safety4" class="font-semibold text-white">Mỗi kết nối có workspace, trạng thái và thiết lập riêng.</span></li>
+              <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><span class="mb-3 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-50 text-sm font-bold text-emerald-600">✓</span><span data-i18n="safety1" class="font-semibold text-slate-900">Chỉ mở những thư mục bạn cho phép.</span></li>
+              <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><span class="mb-3 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-50 text-sm font-bold text-emerald-600">✓</span><span data-i18n="safety2" class="font-semibold text-slate-900">Có thể quay lại trước thay đổi nếu cần.</span></li>
+              <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><span class="mb-3 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-50 text-sm font-bold text-emerald-600">✓</span><span data-i18n="safety3" class="font-semibold text-slate-900">Việc quan trọng có thể yêu cầu bạn duyệt trước.</span></li>
+              <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><span class="mb-3 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-50 text-sm font-bold text-emerald-600">✓</span><span data-i18n="safety4" class="font-semibold text-slate-900">Tách riêng từng tài khoản và kết nối trên cùng một máy.</span></li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="pricing" class="border-y border-white/5 bg-white/[0.018] py-24 lg:py-28">
-        <div class="mx-auto max-w-7xl px-5 lg:px-8">
-          <div class="mx-auto max-w-4xl text-center">
-            <p data-i18n="priceEyebrow" class="text-xs font-black tracking-[0.2em] text-cyan-300">THỬ VIỆC THẬT TRƯỚC KHI TRẢ TIỀN</p>
-            <h2 data-i18n="priceTitle" class="mt-4 text-3xl font-black tracking-tight text-white sm:text-5xl">Nếu nó giải quyết được việc của bạn, 10.000đ là đủ để dùng tiếp 7 ngày — nhiều nơi còn chưa bằng một ổ bánh mì.</h2>
-            <p data-i18n="priceText" class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">Bản payment hiện tại dùng 24 giờ runtime miễn phí cho mỗi tài khoản. Khi hết thời lượng, bạn chọn gói nếu muốn tiếp tục.</p>
-          </div>
+      <section id="pricing" class="border-y border-slate-200 bg-white py-20 lg:py-24">
+        <div class="mx-auto max-w-6xl px-5 lg:px-8">
+          <div class="overflow-hidden rounded-[2rem] border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-sky-50 shadow-sm">
+            <div class="grid items-center gap-8 p-7 sm:p-10 lg:grid-cols-[1.15fr_.85fr] lg:p-12">
+              <div>
+                <p data-i18n="priceEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">CỨ THỬ TRƯỚC</p>
+                <h2 data-i18n="priceTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Dùng thử miễn phí. Hợp thì dùng tiếp từ 10.000đ.</h2>
+                <p data-i18n="priceText" class="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Không cần đọc cả bảng giá trước khi biết sản phẩm có giúp được mình hay không. Tải về, thử bằng việc thật; khi cần dùng tiếp, chọn gói ngay trong app.</p>
+                <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-slate-700">
+                  <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip1">✓ Dùng thử miễn phí</span>
+                  <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip2">✓ Trả phí từ 10.000đ</span>
+                  <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip3">✓ Nâng cấp ngay trong app</span>
+                </div>
+              </div>
+              <div class="relative overflow-hidden rounded-3xl border border-blue-200 bg-white p-6 shadow-[0_18px_45px_rgba(37,99,235,.1)] sm:p-7">
+                <div class="absolute right-0 top-0 h-24 w-24 rounded-bl-[3rem] bg-amber-50"></div>
+                <div class="relative">
+                  <div class="inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1.5 text-xs font-black tracking-[0.1em] text-amber-700">
+                    <span class="text-base">🎉</span>
+                    <span data-i18n="launchOfferBadge">ƯU ĐÃI RA MẮT</span>
+                  </div>
 
-          <div class="mt-14 grid gap-5 lg:grid-cols-4">
-            <article class="price-card flex flex-col rounded-3xl border border-white/10 bg-[#0b1929] p-6">
-              <div class="text-sm font-bold text-slate-400" data-i18n="freeName">Dùng thử</div>
-              <div class="mt-5 text-4xl font-black text-white" data-i18n="freePrice">0đ</div>
-              <div class="mt-2 min-h-10 text-sm text-slate-500" data-i18n="freeUnit">24 giờ sử dụng thực tế</div>
-              <ul class="mt-6 flex-1 space-y-3 text-sm text-slate-300"><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="freeFeat1">Tạo tài khoản miễn phí</span></li><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="freeFeat2">Dùng thử trước khi quyết định</span></li></ul>
-              <a data-download target="_blank" rel="noopener" class="focus-ring mt-7 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-white/10" data-i18n="freeCta">Tải và thử ngay</a>
-            </article>
+                  <div class="mt-5 rounded-2xl border border-amber-100 bg-amber-50/60 p-4">
+                    <div data-i18n="countdownLead" class="text-xs font-bold uppercase tracking-[0.12em] text-amber-700">Ưu đãi kết thúc sau</div>
+                    <div class="mt-3 grid grid-cols-4 gap-2 text-center">
+                      <div class="rounded-xl bg-white px-2 py-2.5 shadow-sm"><div data-countdown-days class="text-xl font-black text-slate-950">29</div><div data-i18n="countdownDays" class="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">ngày</div></div>
+                      <div class="rounded-xl bg-white px-2 py-2.5 shadow-sm"><div data-countdown-hours class="text-xl font-black text-slate-950">00</div><div data-i18n="countdownHours" class="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">giờ</div></div>
+                      <div class="rounded-xl bg-white px-2 py-2.5 shadow-sm"><div data-countdown-minutes class="text-xl font-black text-slate-950">00</div><div data-i18n="countdownMinutes" class="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">phút</div></div>
+                      <div class="rounded-xl bg-white px-2 py-2.5 shadow-sm"><div data-countdown-seconds class="text-xl font-black text-slate-950">00</div><div data-i18n="countdownSeconds" class="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">giây</div></div>
+                    </div>
+                  </div>
 
-            <article class="price-card relative flex flex-col rounded-3xl border border-cyan-300/40 bg-cyan-300/[0.07] p-6 shadow-[0_24px_80px_rgba(34,211,238,.08)]">
-              <div class="absolute right-5 top-5 rounded-full bg-cyan-300 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-slate-950" data-i18n="d7Badge">Dễ thử nhất</div>
-              <div class="text-sm font-bold text-cyan-200" data-i18n="d7Name">7 ngày</div>
-              <div class="mt-5 flex items-end gap-2"><span class="text-4xl font-black text-white" data-i18n="d7Price">10.000đ</span></div>
-              <div class="mt-2 min-h-10 text-sm text-slate-500 line-through" data-i18n="d7Old">50.000đ</div>
-              <ul class="mt-6 flex-1 space-y-3 text-sm text-slate-300"><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="d7Feat1">Không giới hạn thời gian chạy</span></li><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="d7Feat2">Đầy đủ tính năng Pro</span></li></ul>
-              <a data-download target="_blank" rel="noopener" class="focus-ring mt-7 rounded-xl bg-cyan-300 px-4 py-3 text-center text-sm font-black text-slate-950 transition hover:bg-cyan-200" data-i18n="d7Cta">Bắt đầu với 10k</a>
-            </article>
-
-            <article class="price-card relative flex flex-col rounded-3xl border border-indigo-300/25 bg-indigo-300/[0.045] p-6">
-              <div class="absolute right-5 top-5 rounded-full border border-indigo-300/20 bg-indigo-300/10 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-indigo-200" data-i18n="m1Badge">Phổ biến</div>
-              <div class="text-sm font-bold text-indigo-200" data-i18n="m1Name">30 ngày</div>
-              <div class="mt-5 text-4xl font-black text-white" data-i18n="m1Price">100.000đ</div>
-              <div class="mt-2 min-h-10 text-sm text-slate-500 line-through" data-i18n="m1Old">200.000đ</div>
-              <ul class="mt-6 flex-1 space-y-3 text-sm text-slate-300"><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="m1Feat1">Không giới hạn thời gian chạy</span></li><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="m1Feat2">Đầy đủ tính năng Pro</span></li><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="m1Feat3">Ưu tiên hỗ trợ</span></li></ul>
-              <a data-download target="_blank" rel="noopener" class="focus-ring mt-7 rounded-xl border border-indigo-300/20 bg-indigo-300/10 px-4 py-3 text-center text-sm font-bold text-indigo-100 transition hover:bg-indigo-300/15" data-i18n="m1Cta">Tải để bắt đầu</a>
-            </article>
-
-            <article class="price-card relative flex flex-col rounded-3xl border border-white/10 bg-[#0b1929] p-6">
-              <div class="absolute right-5 top-5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-slate-300" data-i18n="y1Badge">Tiết kiệm</div>
-              <div class="text-sm font-bold text-slate-300" data-i18n="y1Name">1 năm</div>
-              <div class="mt-5 text-4xl font-black text-white" data-i18n="y1Price">999.000đ</div>
-              <div class="mt-2 text-sm text-slate-500 line-through" data-i18n="y1Old">2.000.000đ</div>
-              <div class="mt-1 min-h-5 text-xs text-slate-500" data-i18n="y1Unit">~2.700đ/ngày</div>
-              <ul class="mt-6 flex-1 space-y-3 text-sm text-slate-300"><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="y1Feat1">Không giới hạn thời gian chạy</span></li><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="y1Feat2">Đầy đủ tính năng Pro</span></li><li class="flex gap-2"><span class="text-emerald-300">✓</span><span data-i18n="y1Feat3">Ưu tiên hỗ trợ</span></li></ul>
-              <a data-download target="_blank" rel="noopener" class="focus-ring mt-7 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-white/10" data-i18n="y1Cta">Tải để bắt đầu</a>
-            </article>
-          </div>
-
-          <div class="mt-8 grid gap-3 text-sm text-slate-400 md:grid-cols-3">
-            <div class="flex items-center justify-center gap-2 rounded-2xl border border-white/5 bg-white/[0.025] px-4 py-3"><span class="text-emerald-300">✓</span><span data-i18n="payTrust1">Quét QR hoặc chuyển khoản ngân hàng</span></div>
-            <div class="flex items-center justify-center gap-2 rounded-2xl border border-white/5 bg-white/[0.025] px-4 py-3"><span class="text-emerald-300">✓</span><span data-i18n="payTrust2">Kích hoạt Pro tự động sau khi nhận tiền</span></div>
-            <div class="flex items-center justify-center gap-2 rounded-2xl border border-white/5 bg-white/[0.025] px-4 py-3"><span class="text-emerald-300">✓</span><span data-i18n="payTrust3">Hết gói vẫn giữ dữ liệu và cấu hình</span></div>
+                  <div data-i18n="priceStartLabel" class="mt-6 text-sm font-bold text-slate-500">Bắt đầu trả phí chỉ từ</div>
+                  <div class="mt-2 text-5xl font-black tracking-tight text-blue-700">10.000đ</div>
+                  <p data-i18n="priceStartText" class="mt-3 text-lg font-bold leading-7 text-slate-900">Cho toàn bộ tính năng.</p>
+                  <p data-i18n="priceDetailText" class="mt-1 text-sm leading-6 text-slate-500">Chi tiết thời hạn và các gói khác xem ngay trong ứng dụng.</p>
+                </div>
+                <a data-download target="_blank" rel="noopener" class="focus-ring mt-6 inline-flex w-full items-center justify-center rounded-2xl bg-blue-600 px-5 py-3.5 font-black text-white transition hover:bg-blue-700" data-i18n="priceCta">Tải và dùng thử miễn phí</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="faq" class="mx-auto max-w-5xl px-5 py-24 lg:px-8 lg:py-32">
         <div class="text-center">
-          <p data-i18n="faqEyebrow" class="text-xs font-black tracking-[0.2em] text-cyan-300">HỎI NHANH</p>
-          <h2 data-i18n="faqTitle" class="mt-4 text-3xl font-black tracking-tight text-white sm:text-5xl">Những điều nên biết trước khi cài.</h2>
+          <p data-i18n="faqEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">HỎI NHANH</p>
+          <h2 data-i18n="faqTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Những điều nên biết trước khi cài.</h2>
         </div>
-        <div class="mt-12 divide-y divide-white/10 border-y border-white/10">
-          <details class="group py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-white"><span data-i18n="faq1Q">Tôi có cần biết code hay MCP không?</span><span class="faq-plus text-2xl font-light text-slate-500">+</span></summary><p data-i18n="faq1A" class="pb-6 pr-10 leading-7 text-slate-400">Không. Landing này cố tình không bắt bạn học thuật ngữ kỹ thuật. Khi sử dụng, bạn chủ yếu nói việc muốn làm bằng ngôn ngữ bình thường. Phần kết nối ban đầu đã có wizard từng bước.</p></details>
-          <details class="group py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-white"><span data-i18n="faq2Q">Tôi cần máy và tài khoản gì?</span><span class="faq-plus text-2xl font-light text-slate-500">+</span></summary><p data-i18n="faq2A" class="pb-6 pr-10 leading-7 text-slate-400">Ứng dụng dành cho Windows. Bạn cần tài khoản ChatGPT có thể bật Developer mode và dùng kết nối tương ứng; khả năng này có thể phụ thuộc gói hoặc chính sách workspace của tài khoản ChatGPT.</p></details>
-          <details class="group py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-white"><span data-i18n="faq3Q">24 giờ miễn phí tính như thế nào?</span><span class="faq-plus text-2xl font-light text-slate-500">+</span></summary><p data-i18n="faq3A" class="pb-6 pr-10 leading-7 text-slate-400">Theo cấu hình payment branch hiện tại, đây là 1.440 phút runtime miễn phí, tức thời gian sử dụng thực tế của Desktop Coworker chứ không phải cứ đăng ký xong là đồng hồ 24 giờ đếm liên tục.</p></details>
-          <details class="group py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-white"><span data-i18n="faq4Q">Thanh toán xong có phải chờ duyệt thủ công không?</span><span class="faq-plus text-2xl font-light text-slate-500">+</span></summary><p data-i18n="faq4A" class="pb-6 pr-10 leading-7 text-slate-400">Không theo flow hiện tại. Bạn quét QR hoặc chuyển khoản đúng số tiền và nội dung; hệ thống xác nhận rồi kích hoạt Pro tự động.</p></details>
-          <details class="group py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-white"><span data-i18n="faq5Q">Tôi có thể giới hạn ChatGPT chỉ làm trong một thư mục không?</span><span class="faq-plus text-2xl font-light text-slate-500">+</span></summary><p data-i18n="faq5A" class="pb-6 pr-10 leading-7 text-slate-400">Có. Bạn có thể cấu hình phạm vi file theo từng connection và dùng thêm cơ chế duyệt thao tác nếu muốn kiểm soát chặt hơn.</p></details>
-          <details class="group py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-white"><span data-i18n="faq6Q">Sản phẩm này có phải của OpenAI không?</span><span class="faq-plus text-2xl font-light text-slate-500">+</span></summary><p data-i18n="faq6A" class="pb-6 pr-10 leading-7 text-slate-400">Không. Đây là dự án độc lập dành cho ChatGPT và không liên kết hay được OpenAI chứng thực.</p></details>
+        <div class="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white px-6 shadow-sm sm:px-8">
+          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq1Q">Tôi có cần biết code hay MCP không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq1A" class="pb-6 pr-10 leading-7 text-slate-600">Không. Landing này cố tình không bắt bạn học thuật ngữ kỹ thuật. Khi sử dụng, bạn chủ yếu nói việc muốn làm bằng ngôn ngữ bình thường. Phần kết nối ban đầu đã có wizard từng bước.</p></details>
+          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq2Q">Tôi cần máy và tài khoản gì?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq2A" class="pb-6 pr-10 leading-7 text-slate-600">Ứng dụng dành cho Windows. Bạn cần tài khoản ChatGPT có thể bật Developer mode và dùng kết nối tương ứng; khả năng này có thể phụ thuộc gói hoặc chính sách workspace của tài khoản ChatGPT.</p></details>
+          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq3Q">Dùng thử miễn phí có tự hết khi tôi không dùng không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq3A" class="pb-6 pr-10 leading-7 text-slate-600">Không theo cách một gói 24 giờ theo đồng hồ. Bản hiện tại tính theo thời gian Desktop Coworker thực sự chạy; khi bạn không dùng, thời lượng không tự trôi.</p></details>
+          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq4Q">Thanh toán xong có phải chờ duyệt thủ công không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq4A" class="pb-6 pr-10 leading-7 text-slate-600">Không theo flow hiện tại. Bạn quét QR hoặc chuyển khoản đúng số tiền và nội dung; hệ thống xác nhận rồi kích hoạt Pro tự động.</p></details>
+          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq5Q">Tôi có thể giới hạn ChatGPT chỉ làm trong một thư mục không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq5A" class="pb-6 pr-10 leading-7 text-slate-600">Có. Bạn có thể cấu hình phạm vi file theo từng connection và dùng thêm cơ chế duyệt thao tác nếu muốn kiểm soát chặt hơn.</p></details>
+          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faqMultiQ">Một máy có thể dùng nhiều tài khoản ChatGPT không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faqMultiA" class="pb-6 pr-10 leading-7 text-slate-600">Có. Control Center quản lý nhiều tài khoản và kết nối riêng trên cùng một máy; bạn có thể bật hoặc dừng từng tài khoản độc lập.</p></details>
+          <details class="group py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq6Q">Sản phẩm này có phải của OpenAI không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq6A" class="pb-6 pr-10 leading-7 text-slate-600">Không. Đây là dự án độc lập dành cho ChatGPT và không liên kết hay được OpenAI chứng thực.</p></details>
         </div>
       </section>
 
       <section class="mx-auto max-w-7xl px-5 pb-24 lg:px-8 lg:pb-32">
-        <div class="relative overflow-hidden rounded-[2rem] border border-cyan-300/20 bg-cyan-300 px-6 py-14 text-center text-slate-950 sm:px-10 lg:py-20">
-          <div class="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-white/35 blur-3xl"></div>
-          <div class="absolute -bottom-32 right-0 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl"></div>
+        <div class="relative overflow-hidden rounded-[2rem] border border-blue-200 bg-gradient-to-r from-blue-600 to-sky-600 px-6 py-14 text-center text-white shadow-[0_24px_65px_rgba(37,99,235,.18)] sm:px-10 lg:py-20">
+          <div class="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+          <div class="absolute -bottom-32 right-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
           <div class="relative mx-auto max-w-4xl">
-            <p data-i18n="finalEyebrow" class="text-xs font-black tracking-[0.2em] text-slate-700">ĐỪNG MUA VÌ DANH SÁCH TÍNH NĂNG</p>
+            <p data-i18n="finalEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-100">ĐỪNG MUA VÌ DANH SÁCH TÍNH NĂNG</p>
             <h2 data-i18n="finalTitle" class="mt-4 text-3xl font-black tracking-[-0.035em] sm:text-5xl">Hãy thử bằng đúng việc bạn đang ngại làm hôm nay.</h2>
-            <p data-i18n="finalText" class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-800">Nếu Desktop Coworker không giúp bạn bớt thao tác thật, bạn không cần mua. Nếu nó giải quyết được việc, gói đầu tiên chỉ 10.000đ.</p>
+            <p data-i18n="finalText" class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-blue-50">Nếu Desktop Coworker không giúp bạn bớt thao tác thật, bạn không cần mua. Nếu hợp, bạn có thể dùng tiếp chỉ từ 10.000đ.</p>
             <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <a data-download target="_blank" rel="noopener" class="focus-ring rounded-2xl bg-slate-950 px-6 py-4 font-black text-white transition hover:bg-slate-800" data-i18n="finalPrimary">Tải Desktop Coworker miễn phí</a>
-              <a data-install-guide target="_blank" rel="noopener" class="focus-ring rounded-2xl border border-slate-950/20 bg-white/30 px-6 py-4 font-bold text-slate-950 transition hover:bg-white/50" data-i18n="finalSecondary">Xem hướng dẫn cài đặt</a>
+              <a data-download target="_blank" rel="noopener" class="focus-ring rounded-2xl bg-white px-6 py-4 font-black text-blue-700 shadow-sm transition hover:bg-blue-50" data-i18n="finalPrimary">Dùng thử miễn phí</a>
+              <a data-install-guide target="_blank" rel="noopener" class="focus-ring rounded-2xl border border-white/30 bg-white/10 px-6 py-4 font-bold text-white transition hover:bg-white/20" data-i18n="finalSecondary">Xem hướng dẫn cài đặt</a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-white/5 py-8">
+    <footer class="border-t border-slate-200 bg-white py-8">
       <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
         <div>© 2026 Desktop Coworker for ChatGPT</div>
         <div class="text-center" data-i18n="footerNote">Dự án độc lập, không liên kết hoặc được OpenAI chứng thực.</div>

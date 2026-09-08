@@ -2,15 +2,15 @@
 
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #e5eef9;
-  background: #07111f;
+  color: #334155;
+  background: #f8fafc;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
 
 html {
   scroll-behavior: smooth;
-  background: #07111f;
+  background: #f8fafc;
 }
 
 body {
@@ -18,62 +18,77 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 12% 2%, rgba(34, 211, 238, 0.11), transparent 28rem),
-    radial-gradient(circle at 88% 8%, rgba(99, 102, 241, 0.14), transparent 34rem),
-    #07111f;
+    radial-gradient(circle at 10% 0%, rgba(59, 130, 246, 0.07), transparent 30rem),
+    radial-gradient(circle at 94% 8%, rgba(14, 165, 233, 0.055), transparent 34rem),
+    #f8fafc;
 }
 
 ::selection {
-  background: rgba(34, 211, 238, 0.35);
-  color: #fff;
+  background: rgba(59, 130, 246, 0.2);
+  color: #0f172a;
 }
 
-.glass {
-  background: rgba(9, 21, 38, 0.72);
-  border: 1px solid rgba(148, 163, 184, 0.14);
-  box-shadow: 0 24px 80px rgba(2, 6, 23, 0.28);
-  backdrop-filter: blur(20px);
+.office-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 18px 55px rgba(15, 23, 42, 0.07);
 }
 
-.grid-fade {
+.soft-grid {
   background-image:
-    linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
-  background-size: 38px 38px;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent 88%);
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 92%);
 }
 
-.hero-orb {
-  filter: blur(80px);
-  opacity: 0.35;
+.prompt-card,
+.price-card,
+.feature-card {
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
-.prompt-card {
-  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-}
-
-.prompt-card:hover {
+.prompt-card:hover,
+.feature-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(34, 211, 238, 0.34);
-  background: rgba(15, 35, 57, 0.86);
-}
-
-.price-card {
-  transition: transform 180ms ease, border-color 180ms ease;
+  border-color: #bfdbfe;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.07);
 }
 
 .price-card:hover {
   transform: translateY(-4px);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+}
+
+.case-tab {
+  border-color: #e2e8f0;
+  background: #ffffff;
+  color: #475569;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.case-tab:hover {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.case-tab[aria-selected="true"] {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
 }
 
 .focus-ring:focus-visible {
-  outline: 3px solid rgba(34, 211, 238, 0.45);
+  outline: 3px solid rgba(37, 99, 235, 0.28);
   outline-offset: 3px;
 }
 
 [data-lang-switch][aria-pressed="true"] {
-  background: #e6f7ff;
-  color: #08111f;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.2);
 }
 
 details summary::-webkit-details-marker {
@@ -86,4 +101,8 @@ details[open] .faq-plus {
 
 .faq-plus {
   transition: transform 160ms ease;
+}
+
+.check-dot {
+  box-shadow: inset 0 0 0 1px rgba(16, 185, 129, 0.1);
 }
