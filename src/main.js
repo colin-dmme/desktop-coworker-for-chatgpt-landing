@@ -26,7 +26,7 @@ const copy = {
     casesEyebrow: 'CHỈ CHỖ → GIAO VIỆC → NHẬN KẾT QUẢ',
     casesTitle: 'Bạn nói như đang giao việc cho một đồng nghiệp.',
     casesText: 'Không cần câu lệnh kỹ thuật. Copy đường dẫn file hoặc thư mục, dán thẳng vào tin nhắn rồi nói kết quả bạn cần. Chọn một ví dụ bên dưới để xem cách dùng thật.',
-    caseRequestLabel: '1. Bạn chỉ cần nói', caseOldLabel: '2. Trước đây bạn phải tự làm', caseNewLabel: '3. Desktop Coworker giúp làm', caseResultLabel: '4. Bạn nhận được', caseIllustration: 'Ví dụ minh họa',
+    caseChatSub: 'Đang làm việc với Desktop Coworker', caseOldLabel: 'Trước đây phải tự làm', caseIllustration: 'Ví dụ minh họa',
     whyEyebrow: 'VÌ SAO NÓ KHÁC VỚI CHỈ CHAT NHƯ BÌNH THƯỜNG',
     whyTitle: 'ChatGPT không chỉ biết câu trả lời. Nó có chỗ để làm việc.',
     whyText: 'Desktop Coworker nối cuộc chat với đúng file và thư mục bạn cho phép, để bớt phần tải lên, copy qua lại và làm tay sau câu trả lời.',
@@ -102,7 +102,7 @@ const copy = {
     casesEyebrow: 'POINT → DELEGATE → GET THE RESULT',
     casesTitle: 'Talk to it like you are delegating to a coworker.',
     casesText: 'No technical command language. Copy a file or folder path, paste it directly into the message, then describe the result you need. Pick an example below to see how it works in practice.',
-    caseRequestLabel: '1. You only say', caseOldLabel: '2. What you used to do manually', caseNewLabel: '3. Desktop Coworker helps', caseResultLabel: '4. What you get', caseIllustration: 'Illustrative example',
+    caseChatSub: 'Working with Desktop Coworker', caseOldLabel: 'What you used to do manually', caseIllustration: 'Illustrative example',
     whyEyebrow: 'WHY THIS FEELS DIFFERENT FROM NORMAL CHAT',
     whyTitle: 'ChatGPT does not just know the answer. It has a place to work.',
     whyText: 'Desktop Coworker connects the chat to the files and folders you allow, reducing uploads, copy-paste, and the manual work that usually comes after an answer.',
@@ -173,7 +173,7 @@ const caseStudies = {
     },
     {
       id: 'report', tab: 'Làm báo cáo tháng', icon: '📊', folder: 'D:\\BaoCao\\DoanhSo_Thang8\\', folderShort: 'DoanhSo_Thang8',
-      prompt: '“Dữ liệu bán hàng ở đây D:\\BaoCao\\DoanhSo_Thang8\\. Tổng hợp doanh số tháng 8 theo nhân viên, so với tháng 7 và cho tôi 5 điểm đáng chú ý nhất. Lưu bản tổng hợp thành file mới trong cùng thư mục, không sửa file gốc.”',
+      prompt: '“Các file bán hàng tháng 09 ở đây D:\\BaoCao\\Thang_09\\. Dựng cho tôi một báo cáo tổng hợp giống mẫu tháng trước, nêu luôn chỗ nào lệch dữ liệu. Lưu thành file mới, không sửa file gốc.”',
       old: 'Mở nhiều file Excel, copy số liệu sang một bảng mới, tự đối chiếu tháng trước rồi viết phần nhận xét.',
       newWay: 'ChatGPT đọc các bảng trong thư mục, gom dữ liệu cần thiết, so sánh và viết phần tóm tắt theo yêu cầu.',
       title: 'Bản tổng hợp sẵn để bạn xem và chỉnh',
@@ -201,7 +201,7 @@ const caseStudies = {
     },
     {
       id: 'debt', tab: 'Đối chiếu công nợ', icon: '🧾', folder: 'D:\\KeToan\\CongNo\\', folderShort: 'CongNo',
-      prompt: '“Các file công nợ ở đây D:\\KeToan\\CongNo\\. So sánh file nội bộ với file khách gửi. Liệt kê những dòng lệch số tiền, thiếu hóa đơn hoặc khác ngày thanh toán. Chỉ đọc, không sửa file gốc; lưu kết quả đối chiếu thành file mới.”',
+      prompt: '“Hai file công nợ ở đây D:\\CongNo\\Quy3\\. Đối chiếu giúp tôi xem chỗ nào lệch giữa sổ nội bộ và file đối tác gửi. Xuất ra một file kết quả riêng, đừng sửa file gốc.”',
       old: 'Mở hai bảng cạnh nhau, dò từng dòng, đánh dấu khác biệt và tự tạo danh sách cần xử lý.',
       newWay: 'ChatGPT đọc hai file, đối chiếu theo tiêu chí bạn yêu cầu và gom các khác biệt thành một danh sách dễ kiểm tra.',
       title: 'Danh sách chênh lệch thay vì dò bằng mắt',
@@ -215,7 +215,7 @@ const caseStudies = {
     },
     {
       id: 'organize', tab: 'Dọn thư mục lộn xộn', icon: '🗂️', folder: 'D:\\DuAn\\TaiLieu_Raw\\', folderShort: 'TaiLieu_Raw',
-      prompt: '“Dọn thư mục này D:\\DuAn\\TaiLieu_Raw\\ giúp tôi: đổi tên file theo KhachHang_Ngay_LoaiTaiLieu và chia vào các thư mục Hợp đồng, Báo giá, Hóa đơn. Trước khi đổi tên hoặc di chuyển file, hãy đưa kế hoạch cho tôi duyệt.”',
+      prompt: '“Thư mục dự án này ở đây D:\\DuAn\\Campaign_T9\\. Sắp xếp lại file theo nhóm, đổi tên ảnh theo ngày chụp, và liệt kê các file trùng. Cho tôi xem kế hoạch trước khi thực hiện.”',
       old: 'Mở từng file để đoán nội dung, rename thủ công rồi kéo thả sang từng thư mục.',
       newWay: 'ChatGPT đọc tên và nội dung cần thiết, đề xuất cách sắp xếp rồi thực hiện theo phạm vi bạn cho phép.',
       title: 'Một thư mục sạch và có quy tắc rõ ràng',
@@ -229,7 +229,7 @@ const caseStudies = {
     },
     {
       id: 'content', tab: 'Viết theo tài liệu nội bộ', icon: '📝', folder: 'D:\\Marketing\\CamNangThuongHieu\\', folderShort: 'CamNangThuongHieu',
-      prompt: '“Cẩm nang thương hiệu và tài liệu sản phẩm ở đây D:\\Marketing\\CamNangThuongHieu\\. Dựa đúng vào các file đó, viết 3 mẫu bài giới thiệu sản phẩm. Giữ đúng cách xưng hô, tránh các từ bị cấm và đừng tự thêm thông tin sản phẩm không có trong tài liệu.”',
+      prompt: '“Tài liệu thương hiệu ở đây D:\\Brand\\TaiLieuNoiBo\\. Viết cho tôi 3 phương án nội dung giới thiệu sản phẩm, chỉ dùng thông tin trong tài liệu này và ghi rõ chỗ nào chưa đủ dữ liệu.”',
       old: 'Mở cẩm nang, copy các quy tắc quan trọng sang chat, rồi liên tục nhắc lại để nội dung không lệch giọng.',
       newWay: 'ChatGPT đọc tài liệu hướng dẫn ngay trong thư mục và dùng nó làm căn cứ khi viết nội dung.',
       title: 'Nội dung bám đúng quy tắc bạn đã có',
@@ -255,7 +255,7 @@ const caseStudies = {
     },
     {
       id: 'report', tab: 'Build a monthly report', icon: '📊', folder: 'D:\\Reports\\Sales_August\\', folderShort: 'Sales_August',
-      prompt: '“The sales data is here D:\\Reports\\Sales_August\\. Summarize August sales by rep, compare it with July, and give me the five most important takeaways. Save the summary as a new file in the same folder and do not modify the source files.”',
+      prompt: '“The September sales files are here D:\\Reports\\September\\. Build a consolidated report that follows last month’s template, and flag any data mismatches. Save it as a new file and leave the source files unchanged.”',
       old: 'Open several spreadsheets, copy figures into a new sheet, compare the previous month, then write the commentary yourself.',
       newWay: 'ChatGPT reads the relevant sheets, gathers the data, compares the periods, and writes the summary you asked for.',
       title: 'A report draft ready for review',
@@ -275,7 +275,7 @@ const caseStudies = {
     },
     {
       id: 'debt', tab: 'Reconcile two sheets', icon: '🧾', folder: 'D:\\Finance\\Receivables\\', folderShort: 'Receivables',
-      prompt: '“The receivables files are here D:\\Finance\\Receivables\\. Compare our internal sheet with the customer’s sheet. List rows with amount differences, missing invoices, or different payment dates. Read only; do not modify the originals. Save the comparison as a new file.”',
+      prompt: '“The two receivables files are here D:\\Receivables\\Q3\\. Compare our internal ledger with the partner file and show me every mismatch. Export the result to a separate file and do not modify the originals.”',
       old: 'Open two spreadsheets side by side, inspect row after row, mark mismatches, and build a separate issue list.',
       newWay: 'ChatGPT reads both files, compares them by the criteria you set, and gathers the mismatches into a reviewable list.',
       title: 'A mismatch list instead of visual scanning',
@@ -285,7 +285,7 @@ const caseStudies = {
     },
     {
       id: 'organize', tab: 'Clean up a messy folder', icon: '🗂️', folder: 'D:\\Project\\Raw_Documents\\', folderShort: 'Raw_Documents',
-      prompt: '“Clean up this folder D:\\Project\\Raw_Documents\\: rename files as Customer_Date_DocumentType and sort them into Contracts, Quotes, and Invoices. Show me the proposed changes for approval before renaming or moving anything.”',
+      prompt: '“This project folder is here D:\\Projects\\Campaign_Sep\\. Organize files by group, rename images by capture date, and list duplicates. Show me the plan for approval before making any changes.”',
       old: 'Open files to figure out what they are, rename them manually, then drag them into the right folders.',
       newWay: 'ChatGPT inspects what it needs, proposes an organization plan, and performs it within the access you allow.',
       title: 'A clean folder with a repeatable rule',
@@ -295,7 +295,7 @@ const caseStudies = {
     },
     {
       id: 'content', tab: 'Write from internal guidelines', icon: '📝', folder: 'D:\\Marketing\\Brand_Guide\\', folderShort: 'Brand_Guide',
-      prompt: '“The brand guide and product materials are here D:\\Marketing\\Brand_Guide\\. Use only those files to write three product intro posts. Keep the approved tone, avoid prohibited wording, and do not invent product details that are not in the source material.”',
+      prompt: '“The brand materials are here D:\\Brand\\Internal_Materials\\. Write three product-introduction options using only these documents, and clearly flag anything that does not have enough source data.”',
       old: 'Open the guide, copy important rules into chat, and keep reminding ChatGPT so the writing stays on-brand.',
       newWay: 'ChatGPT reads the guide from the folder and uses it as the source while drafting.',
       title: 'Drafts that follow your existing rules',
@@ -304,6 +304,145 @@ const caseStudies = {
       files: [['brand_voice.pdf', 'tone and voice'], ['blocked_terms.xlsx', 'words to avoid'], ['good_examples.docx', 'reference examples']]
     }
   ]
+};
+
+const caseFlows = {
+  vi: {
+    contract: {
+      worked: 'Worked for 38s',
+      tools: ['Đọc 9 tài liệu trong hồ sơ', 'Tìm điều khoản “bảo hành” và “24 tháng”', 'Đối chiếu hợp đồng, báo giá và email'],
+      doneTitle: 'Có cam kết bảo hành 24 tháng.',
+      doneText: 'Căn cứ chính nằm trong hop_dong_ky_2025.pdf, Điều 8.2. Tôi cũng đã đối chiếu báo giá và trao đổi email; không thấy nội dung mâu thuẫn.',
+      outputIcon: '📑', output: 'D:\\HoSo\\KhachHang_Minh_An\\hop_dong_ky_2025.pdf',
+      badge: 'ĐÃ KIỂM TRA HỒ SƠ', status: 'Có căn cứ', tone: 'success',
+      title: 'Kết luận có nguồn để kiểm tra lại',
+      result: 'Không chỉ trả lời “có”. Kết quả chỉ rõ tài liệu và điều khoản làm căn cứ để bạn mở lại kiểm tra ngay.',
+      metrics: [['3', 'nguồn đã đối chiếu'], ['24 tháng', 'cam kết xác nhận'], ['0', 'nội dung mâu thuẫn'], ['✓', 'không suy đoán']],
+      listIcon: '🔎', listTitle: 'Nguồn làm căn cứ',
+      files: [['hop_dong_ky_2025.pdf', 'Điều 8.2 — bảo hành 24 tháng'], ['bao_gia_v2.xlsx', 'ghi chú cùng nội dung'], ['email_trao_doi/', 'không thấy mâu thuẫn']],
+      proof: 'Kết luận bám theo hồ sơ thật: có file, có mục, có thể kiểm tra lại.'
+    },
+    report: {
+      worked: 'Worked for 1m 47s',
+      tools: ['Đọc 8 file bán hàng tháng 09', 'Mở mẫu báo cáo tháng trước và đối chiếu cấu trúc', 'Tìm chỗ lệch dữ liệu và tạo file báo cáo mới'],
+      doneTitle: 'Xong rồi.',
+      doneText: 'Tôi đã dựng báo cáo theo mẫu tháng trước, đánh dấu 3 chỗ dữ liệu chưa khớp và lưu kết quả thành file mới. File gốc không bị sửa.',
+      outputIcon: '📊', output: 'D:\\BaoCao\\Thang_09\\BaoCao_TongHop_Thang09.xlsx',
+      badge: 'BÁO CÁO ĐÃ HOÀN THÀNH', status: 'Đã lưu file', tone: 'success',
+      title: 'Báo cáo tổng hợp — Tháng 09',
+      result: 'Một file mới theo đúng mẫu cũ, kèm các điểm lệch cần kiểm tra thay vì phải tự mở từng bảng rồi ghép lại.',
+      metrics: [['8', 'file đã đọc'], ['1', 'mẫu tháng trước'], ['3', 'chỗ dữ liệu lệch'], ['✓', 'file gốc giữ nguyên']],
+      listIcon: '📁', listTitle: 'File và điểm đáng chú ý',
+      files: [['BaoCao_TongHop_Thang09.xlsx', 'file kết quả mới'], ['sales_09.xlsx', '2 dòng thiếu mã đơn'], ['doi_soat_09.xlsx', '1 tổng tiền chưa khớp']],
+      proof: 'Kết quả được lưu riêng; dữ liệu nguồn vẫn giữ nguyên để đối chiếu.'
+    },
+    email: {
+      worked: 'Worked for 42s',
+      tools: ['Đọc hợp đồng và phụ lục của An Phú', 'Tìm điều khoản về thời hạn thanh toán', 'Soạn email chỉ từ nội dung có trong hợp đồng'],
+      doneTitle: 'Tôi đã soạn bản nháp. Chưa gửi.',
+      doneText: 'Email bám theo điều khoản thanh toán trong hợp đồng. Tôi đang dừng ở bước chờ bạn xem và duyệt trước khi có bất kỳ hành động gửi nào.',
+      outputIcon: '✉️', output: 'D:\\KhachHang\\AnPhu\\Draft_Email_ThanhToan.txt',
+      badge: 'BẢN NHÁP EMAIL', status: 'Chờ bạn duyệt', tone: 'review',
+      title: 'Email trả lời về thời hạn thanh toán',
+      result: 'Bản nháp đi kèm nguồn hợp đồng để bạn kiểm tra trước. Không mô phỏng đã gửi khi chưa có sự đồng ý của bạn.',
+      metrics: [['2', 'tài liệu đã đọc'], ['1', 'điều khoản làm căn cứ'], ['0', 'thông tin tự thêm'], ['⏸', 'chưa gửi email']],
+      listIcon: '📎', listTitle: 'Căn cứ và bản nháp',
+      files: [['hop_dong_chinh_thuc.pdf', 'Điều 5.1 — thời hạn thanh toán'], ['phu_luc_01.pdf', 'không thay đổi Điều 5.1'], ['Draft_Email_ThanhToan.txt', 'bản nháp chờ duyệt']],
+      proof: 'Hành động gửi được giữ lại cho tới khi bạn duyệt nội dung.'
+    },
+    debt: {
+      worked: 'Worked for 1m 12s',
+      tools: ['Đọc hai bảng công nợ trong thư mục', 'Ghép dòng theo mã khách và số hóa đơn', 'Tách các dòng lệch và xuất file kết quả riêng'],
+      doneTitle: 'Đối chiếu xong.',
+      doneText: 'Có 326 dòng khớp và 7 dòng lệch. Tôi đã gom riêng các chênh lệch để bạn kiểm tra và không sửa hai file nguồn.',
+      outputIcon: '🧾', output: 'D:\\CongNo\\Quy3\\doi_chieu_cong_no_ket_qua.xlsx',
+      badge: 'ĐỐI CHIẾU ĐÃ HOÀN THÀNH', status: '7 dòng lệch', tone: 'info',
+      title: 'Kết quả đối chiếu công nợ — Quý 3',
+      result: 'Bạn chỉ cần tập trung vào những dòng có vấn đề thay vì dò bằng mắt toàn bộ hai bảng.',
+      metrics: [['326', 'dòng khớp'], ['7', 'dòng lệch'], ['3', 'mã khách bị ảnh hưởng'], ['✓', 'file gốc giữ nguyên']],
+      listIcon: '⚠️', listTitle: 'Một số chênh lệch cần kiểm tra',
+      files: [['KH-018', 'lệch 1.250.000đ'], ['KH-042', 'thiếu hóa đơn INV-8821'], ['KH-107', 'khác ngày thanh toán']],
+      proof: 'File kết quả chỉ chứa phần cần xử lý, giúp việc rà soát ngắn hơn và rõ hơn.'
+    },
+    organize: {
+      worked: 'Worked for 29s',
+      tools: ['Quét 146 file trong thư mục dự án', 'Nhóm file và đọc ngày chụp của ảnh', 'Tìm file trùng và dựng kế hoạch thay đổi'],
+      doneTitle: 'Tôi đã lập kế hoạch. Chưa thay đổi file nào.',
+      doneText: 'Tôi có thể sắp xếp theo 4 nhóm, đổi tên 18 ảnh theo ngày chụp và thấy 6 file có khả năng trùng. Tôi đang chờ bạn duyệt kế hoạch trước khi rename hoặc move.',
+      outputIcon: '🗂️', output: 'D:\\DuAn\\Campaign_T9\\ke_hoach_sap_xep.txt',
+      badge: 'KẾ HOẠCH SẮP XẾP', status: 'Chờ bạn duyệt', tone: 'review',
+      title: 'Kế hoạch dọn thư mục Campaign_T9',
+      result: 'Bạn xem trước chính xác những gì sẽ được nhóm, đổi tên và đánh dấu trùng trước khi cho phép thực hiện thay đổi hàng loạt.',
+      metrics: [['146', 'file đã quét'], ['4', 'nhóm đề xuất'], ['18', 'ảnh cần đổi tên'], ['6', 'file nghi trùng']],
+      listIcon: '🧭', listTitle: 'Thay đổi dự kiến',
+      files: [['Ảnh chiến dịch', '18 ảnh → tên theo ngày chụp'], ['Tài liệu / Bảng tính', 'gom theo loại file'], ['File trùng', '6 file → chỉ đánh dấu, chưa xóa']],
+      proof: 'Chưa rename, move hay xóa gì cho tới khi bạn duyệt kế hoạch.'
+    },
+    content: {
+      worked: 'Worked for 51s',
+      tools: ['Đọc 5 tài liệu thương hiệu và sản phẩm', 'Tách thông tin có căn cứ và các phần còn thiếu', 'Viết 3 phương án và đánh dấu chỗ chưa đủ dữ liệu'],
+      doneTitle: 'Đã viết 3 phương án.',
+      doneText: 'Cả 3 bản chỉ dùng thông tin có trong tài liệu nội bộ. Có 2 chi tiết sản phẩm chưa đủ căn cứ nên tôi đã đánh dấu thay vì tự điền.',
+      outputIcon: '📝', output: 'D:\\Brand\\TaiLieuNoiBo\\3_phuong_an_gioi_thieu.docx',
+      badge: 'NỘI DUNG ĐÃ SOẠN', status: '3 phương án', tone: 'success',
+      title: '3 phương án giới thiệu sản phẩm',
+      result: 'Nội dung bám theo tài liệu thương hiệu và chủ động chỉ ra phần thiếu dữ liệu, thay vì lấp chỗ trống bằng thông tin tưởng tượng.',
+      metrics: [['5', 'tài liệu nguồn'], ['3', 'phương án nội dung'], ['2', 'chỗ thiếu căn cứ'], ['0', 'claim tự bịa']],
+      listIcon: '✍️', listTitle: 'Các bản nội dung',
+      files: [['Phương án 1', 'ngắn, trực tiếp'], ['Phương án 2', 'nhấn lợi ích có căn cứ'], ['Phương án 3', 'giọng kể nhẹ hơn']],
+      proof: 'Những chỗ chưa đủ dữ liệu được ghi rõ để bạn bổ sung, không tự suy diễn.'
+    }
+  },
+  en: {
+    contract: {
+      worked: 'Worked for 38s', tools: ['Read 9 documents in the customer folder', 'Find “warranty” and “24 months” clauses', 'Cross-check the contract, quote, and email thread'],
+      doneTitle: 'Yes — there is a 24-month warranty commitment.', doneText: 'The primary source is signed_contract_2025.pdf, section 8.2. I also cross-checked the quote and email thread and found no conflicting language.',
+      outputIcon: '📑', output: 'D:\\Files\\Customer_Minh_An\\signed_contract_2025.pdf', badge: 'CUSTOMER FILE CHECKED', status: 'Source found', tone: 'success',
+      title: 'A conclusion you can verify', result: 'The answer points to the exact source and section so you can open the document and verify it immediately.',
+      metrics: [['3', 'sources cross-checked'], ['24 months', 'warranty confirmed'], ['0', 'conflicts found'], ['✓', 'no guessing']], listIcon: '🔎', listTitle: 'Sources used',
+      files: [['signed_contract_2025.pdf', 'Section 8.2 — 24-month warranty'], ['quote_v2.xlsx', 'matching note'], ['email_thread/', 'no conflicting language']], proof: 'The conclusion is grounded in the customer files, with a document and section you can verify.'
+    },
+    report: {
+      worked: 'Worked for 1m 47s', tools: ['Read 8 September sales files', 'Open last month’s report template', 'Flag mismatches and create a new report file'],
+      doneTitle: 'Done.', doneText: 'I built the report using last month’s structure, flagged three data mismatches, and saved the result as a new file. The source files were not changed.',
+      outputIcon: '📊', output: 'D:\\Reports\\September\\September_Summary_Report.xlsx', badge: 'REPORT COMPLETE', status: 'File saved', tone: 'success',
+      title: 'September summary report', result: 'A new report follows the existing template and surfaces the mismatches that need attention.',
+      metrics: [['8', 'files reviewed'], ['1', 'previous template'], ['3', 'data mismatches'], ['✓', 'sources unchanged']], listIcon: '📁', listTitle: 'Output and findings',
+      files: [['September_Summary_Report.xlsx', 'new output file'], ['sales_sep.xlsx', '2 rows missing order IDs'], ['reconciliation_sep.xlsx', '1 total does not match']], proof: 'The result is saved separately, leaving every source file intact for verification.'
+    },
+    email: {
+      worked: 'Worked for 42s', tools: ['Read An Phu’s contract and appendix', 'Find the payment-term clause', 'Draft a reply using only contract information'],
+      doneTitle: 'Draft ready. Nothing has been sent.', doneText: 'The reply is grounded in the payment clause. I stopped at the approval step and will not send anything until you review it.',
+      outputIcon: '✉️', output: 'D:\\Customers\\AnPhu\\Payment_Terms_Email_Draft.txt', badge: 'EMAIL DRAFT', status: 'Awaiting approval', tone: 'review',
+      title: 'Payment terms reply', result: 'You get a source-grounded draft plus the exact clause to verify before any send action happens.',
+      metrics: [['2', 'documents reviewed'], ['1', 'source clause'], ['0', 'invented details'], ['⏸', 'not sent']], listIcon: '📎', listTitle: 'Source and draft',
+      files: [['final_contract.pdf', 'Section 5.1 — payment terms'], ['appendix_01.pdf', 'no change to Section 5.1'], ['Payment_Terms_Email_Draft.txt', 'draft awaiting approval']], proof: 'Sending remains blocked until you explicitly approve the draft.'
+    },
+    debt: {
+      worked: 'Worked for 1m 12s', tools: ['Read the two receivables sheets', 'Match rows by customer and invoice ID', 'Export mismatches to a separate result file'],
+      doneTitle: 'Reconciliation complete.', doneText: '326 rows match and 7 rows differ. I collected the mismatches in a separate file and did not modify either source sheet.',
+      outputIcon: '🧾', output: 'D:\\Receivables\\Q3\\receivables_reconciliation_result.xlsx', badge: 'RECONCILIATION COMPLETE', status: '7 mismatches', tone: 'info',
+      title: 'Q3 receivables reconciliation', result: 'You can focus on the rows that need attention instead of visually scanning both spreadsheets end to end.',
+      metrics: [['326', 'matching rows'], ['7', 'mismatches'], ['3', 'customers affected'], ['✓', 'sources unchanged']], listIcon: '⚠️', listTitle: 'Examples to review',
+      files: [['CUST-018', 'amount differs by ₫1,250,000'], ['CUST-042', 'invoice INV-8821 missing'], ['CUST-107', 'payment date differs']], proof: 'The output isolates only the issues that need review, while preserving both originals.'
+    },
+    organize: {
+      worked: 'Worked for 29s', tools: ['Scan 146 project files', 'Group files and read image capture dates', 'Detect duplicates and prepare a change plan'],
+      doneTitle: 'Plan ready. No files changed yet.', doneText: 'I can organize the folder into four groups, rename 18 images by capture date, and found 6 possible duplicates. I am waiting for your approval before any rename or move.',
+      outputIcon: '🗂️', output: 'D:\\Projects\\Campaign_Sep\\organization_plan.txt', badge: 'ORGANIZATION PLAN', status: 'Awaiting approval', tone: 'review',
+      title: 'Campaign_Sep cleanup plan', result: 'You see the exact proposed grouping, renames, and duplicate flags before allowing any batch changes.',
+      metrics: [['146', 'files scanned'], ['4', 'proposed groups'], ['18', 'images to rename'], ['6', 'possible duplicates']], listIcon: '🧭', listTitle: 'Proposed changes',
+      files: [['Campaign images', '18 images → capture-date names'], ['Docs / Sheets', 'group by file type'], ['Duplicates', '6 files → flagged only, not deleted']], proof: 'No rename, move, or delete happens until you approve the plan.'
+    },
+    content: {
+      worked: 'Worked for 51s', tools: ['Read 5 brand and product documents', 'Separate sourced facts from missing information', 'Draft 3 options and flag unsupported gaps'],
+      doneTitle: 'Three options are ready.', doneText: 'All three drafts use only the internal source material. Two product details do not have enough support, so I flagged them instead of filling them in.',
+      outputIcon: '📝', output: 'D:\\Brand\\Internal_Materials\\3_product_intro_options.docx', badge: 'CONTENT DRAFTED', status: '3 options', tone: 'success',
+      title: 'Three product-introduction options', result: 'The drafts follow the internal material and explicitly surface missing facts instead of inventing claims.',
+      metrics: [['5', 'source documents'], ['3', 'draft options'], ['2', 'unsupported gaps'], ['0', 'invented claims']], listIcon: '✍️', listTitle: 'Draft options',
+      files: [['Option 1', 'short and direct'], ['Option 2', 'benefit-led, source-backed'], ['Option 3', 'softer narrative tone']], proof: 'Anything without enough source support is clearly marked for you to fill in.'
+    }
+  }
 };
 
 const releaseVersion = '1.7.0';
@@ -336,6 +475,7 @@ function updateLaunchCountdown() {
 function renderCase(caseId = activeCaseId) {
   const studies = caseStudies[currentLang];
   const selected = studies.find((item) => item.id === caseId) || studies[0];
+  const flow = caseFlows[currentLang][selected.id];
   activeCaseId = selected.id;
 
   const tabs = document.querySelector('[data-case-tabs]');
@@ -344,7 +484,7 @@ function renderCase(caseId = activeCaseId) {
     studies.forEach((item) => {
       const button = document.createElement('button');
       button.type = 'button';
-      button.className = 'case-tab focus-ring inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-bold transition';
+      button.className = 'case-tab focus-ring inline-flex w-full items-center justify-center gap-2 rounded-2xl border px-3 py-2.5 text-center text-sm font-bold leading-5 transition sm:w-auto sm:rounded-full sm:px-4';
       button.dataset.caseId = item.id;
       button.setAttribute('aria-selected', String(item.id === activeCaseId));
       button.innerHTML = `<span>${item.icon}</span><span>${item.tab}</span>`;
@@ -359,25 +499,108 @@ function renderCase(caseId = activeCaseId) {
   };
 
   setText('[data-case-icon]', selected.icon);
-  setText('[data-case-folder-short]', selected.folderShort);
-  setText('[data-case-prompt]', selected.prompt);
+  setText('[data-case-prompt]', selected.prompt.replace(/^“|”$/g, ''));
   setText('[data-case-old]', selected.old);
-  setText('[data-case-new]', selected.newWay);
-  setText('[data-case-title]', selected.title);
-  setText('[data-case-result]', selected.result);
-  setText('[data-case-proof]', selected.proof);
+  setText('[data-case-worked]', flow.worked);
+  setText('[data-case-done-title]', flow.doneTitle);
+  setText('[data-case-done-text]', flow.doneText);
+  setText('[data-case-output-icon]', flow.outputIcon);
+  setText('[data-case-output]', flow.output);
+  setText('[data-case-card-badge]', flow.badge);
+  setText('[data-case-status]', flow.status);
+  setText('[data-case-title]', flow.title);
+  setText('[data-case-result]', flow.result);
+  setText('[data-case-list-icon]', flow.listIcon);
+  setText('[data-case-list-title]', flow.listTitle);
+  setText('[data-case-proof]', flow.proof);
+
+  const tones = {
+    success: {
+      badge: 'text-emerald-600',
+      status: 'bg-emerald-50 text-emerald-700',
+      proof: 'border-emerald-100 bg-emerald-50/60 text-emerald-900',
+      proofIcon: 'bg-emerald-600 text-white'
+    },
+    review: {
+      badge: 'text-amber-600',
+      status: 'bg-amber-50 text-amber-700',
+      proof: 'border-amber-100 bg-amber-50/70 text-amber-950',
+      proofIcon: 'bg-amber-500 text-white'
+    },
+    info: {
+      badge: 'text-blue-600',
+      status: 'bg-blue-50 text-blue-700',
+      proof: 'border-blue-100 bg-blue-50/70 text-blue-950',
+      proofIcon: 'bg-blue-600 text-white'
+    }
+  };
+  const tone = tones[flow.tone] || tones.info;
+  const badge = document.querySelector('[data-case-card-badge]');
+  const status = document.querySelector('[data-case-status]');
+  const proofWrap = document.querySelector('[data-case-proof-wrap]');
+  const proofIcon = document.querySelector('[data-case-proof-icon]');
+  if (badge) badge.className = `text-[11px] font-black uppercase tracking-[0.13em] ${tone.badge}`;
+  if (status) status.className = `shrink-0 rounded-full px-3 py-1 text-xs font-bold ${tone.status}`;
+  if (proofWrap) proofWrap.className = `mt-5 flex items-start gap-3 rounded-2xl border px-4 py-3.5 text-sm ${tone.proof}`;
+  if (proofIcon) proofIcon.className = `flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-bold ${tone.proofIcon}`;
+
+  const tools = document.querySelector('[data-case-tools]');
+  if (tools) {
+    tools.innerHTML = '';
+    flow.tools.forEach((toolText) => {
+      const row = document.createElement('div');
+      row.className = 'tool-row flex items-center justify-between rounded-xl px-1 py-2.5 text-sm text-zinc-300';
+      const left = document.createElement('div');
+      left.className = 'flex min-w-0 items-start gap-3';
+      const icon = document.createElement('span');
+      icon.className = 'font-mono text-base text-zinc-400';
+      icon.textContent = '{ }';
+      const textWrap = document.createElement('div');
+      textWrap.className = 'min-w-0';
+      const called = document.createElement('span');
+      called.className = 'block font-medium';
+      called.textContent = 'Called tool';
+      const detail = document.createElement('span');
+      detail.className = 'mt-0.5 block text-xs leading-5 text-zinc-500';
+      detail.textContent = toolText;
+      const chevron = document.createElement('span');
+      chevron.className = 'text-zinc-600';
+      chevron.textContent = '⌄';
+      textWrap.append(called, detail);
+      left.append(icon, textWrap);
+      row.append(left, chevron);
+      tools.appendChild(row);
+    });
+  }
+
+  const metrics = document.querySelector('[data-case-metrics]');
+  if (metrics) {
+    metrics.innerHTML = '';
+    flow.metrics.forEach(([value, label]) => {
+      const item = document.createElement('div');
+      item.className = 'rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-3';
+      const valueNode = document.createElement('div');
+      valueNode.className = 'text-base font-black text-slate-950';
+      valueNode.textContent = value;
+      const labelNode = document.createElement('div');
+      labelNode.className = 'mt-0.5 text-xs leading-5 text-slate-500';
+      labelNode.textContent = label;
+      item.append(valueNode, labelNode);
+      metrics.appendChild(item);
+    });
+  }
 
   const files = document.querySelector('[data-case-files]');
   if (files) {
     files.innerHTML = '';
-    selected.files.forEach(([name, note]) => {
+    flow.files.forEach(([name, note]) => {
       const row = document.createElement('div');
-      row.className = 'flex items-start justify-between gap-4 rounded-xl bg-slate-50 px-3.5 py-3';
+      row.className = 'flex items-start justify-between gap-3 rounded-xl bg-white px-3.5 py-3 shadow-sm';
       const fileName = document.createElement('span');
-      fileName.className = 'min-w-0 break-all font-mono text-xs font-semibold text-slate-700';
+      fileName.className = 'min-w-0 break-words text-xs font-bold text-slate-700';
       fileName.textContent = name;
       const fileNote = document.createElement('span');
-      fileNote.className = 'shrink-0 text-right text-xs text-blue-600';
+      fileNote.className = 'max-w-[52%] text-right text-xs leading-5 text-blue-600';
       fileNote.textContent = note;
       row.append(fileName, fileNote);
       files.appendChild(row);
