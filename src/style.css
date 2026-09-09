@@ -34,6 +34,33 @@ body {
   box-shadow: 0 18px 55px rgba(15, 23, 42, 0.07);
 }
 
+.chatgpt-mock {
+  background:
+    radial-gradient(circle at 90% 5%, rgba(30, 77, 143, 0.16), transparent 17rem),
+    #0f0f10;
+}
+
+.tool-row {
+  transition: background 160ms ease;
+}
+
+.tool-row:hover {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.report-float {
+  animation: report-float 5s ease-in-out infinite;
+}
+
+@keyframes report-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .report-float { animation: none; }
+}
+
 .soft-grid {
   background-image:
     linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
