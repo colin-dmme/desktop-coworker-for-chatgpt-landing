@@ -2,14 +2,14 @@ import './style.css';
 
 const copy = {
   vi: {
-    metaTitle: 'Desktop Coworker for ChatGPT — Chỉ chỗ cho ChatGPT, việc làm ngay trên PC',
+    metaTitle: 'Desktop Coworker for ChatGPT — Chỉ chỗ cho ChatGPT, việc làm ngay trên máy bạn',
     metaDescription: 'Không cần tải từng file lên ChatGPT. Chỉ cần chỉ thư mục hoặc tài liệu trên PC và nói kết quả bạn muốn. Dùng thử miễn phí, trả phí từ 10.000đ.',
     navHow: 'Cách hoạt động', navUse: 'Ví dụ thực tế', navPrice: 'Chi phí', navFaq: 'Hỏi đáp', navDownload: 'Dùng thử miễn phí',
     eyebrow: 'Bạn chỉ cần chỉ chỗ. ChatGPT lo phần còn lại.',
-    heroTitle: 'Bạn chỉ cần chỉ chỗ cho ChatGPT Web. Việc được làm ngay trên PC của bạn.',
+    heroTitle: 'Bạn chỉ cần chỉ chỗ cho ChatGPT Web. Việc được làm ngay trên máy của bạn.',
     heroText: 'Không còn phải tải lên từng file. Chỉ cần copy đường dẫn file hoặc thư mục trên PC, dán thẳng vào ChatGPT và nói kết quả bạn muốn. Desktop Coworker giúp ChatGPT đọc, đối chiếu, sắp xếp và xử lý ngay trên máy của bạn.',
-    heroPill1: 'Dành cho Windows', heroPill2: 'Dùng thử miễn phí', heroPill3: 'Bắt đầu từ 10.000đ',
-    heroPrimary: 'Dùng thử miễn phí', heroSecondary: 'Xem ví dụ thực tế',
+    heroPill1: 'Windows & macOS', heroPill2: 'Dùng thử miễn phí', heroPill3: 'Bắt đầu từ 10.000đ',
+    heroPrimary: 'Chọn bản tải miễn phí', heroSecondary: 'Xem ví dụ thực tế',
     heroNote: 'Dùng thử miễn phí · Bắt đầu trả phí từ 10.000đ · Chi tiết gói xem ngay trong app',
     heroWorkspaceTitle: 'Công việc hôm nay', heroWorkspaceSub: 'Desktop Coworker đang hỗ trợ', heroConnected: 'Đã kết nối',
     screenLabel: 'Một việc thật, giao ngay trong ChatGPT',
@@ -37,9 +37,18 @@ const copy = {
     beforeLabel: 'TRƯỚC ĐÂY', beforeText: 'Tìm file → tải lên → copy câu trả lời → mở file gốc → chỉnh lại → lưu bản mới.', beforeNote: 'ChatGPT trả lời xong nhưng phần thao tác vẫn nằm ở bạn.',
     nowLabel: 'BÂY GIỜ', nowText: 'Chỉ chỗ → nói kết quả cần → ChatGPT làm trong phạm vi được phép → báo lại những gì đã làm.', nowNote: 'Bạn dành thời gian để xem và quyết định, thay vì làm tay từng bước.',
     howEyebrow: 'CÀI MỘT LẦN', howTitle: 'Sau đó cứ dùng ChatGPT như bình thường.',
-    how1Title: '1. Cài ứng dụng', how1Text: 'Tải file cài cho Windows và mở Desktop Coworker.',
+    how1Title: '1. Cài ứng dụng', how1Text: 'Chọn đúng bản Windows hoặc macOS, tải về và mở Desktop Coworker.',
     how2Title: '2. Kết nối với ChatGPT', how2Text: 'Trình hướng dẫn đi từng bước, có link trực tiếp, nút copy và hình minh họa. Bạn có thể dừng rồi làm tiếp sau.',
     how3Title: '3. Giao việc trong chat', how3Text: 'Nói việc muốn hoàn thành. ChatGPT có thể làm với những file và thư mục bạn cho phép.',
+    downloadEyebrow: 'CHỌN ĐÚNG BẢN CHO MÁY CỦA BẠN',
+    downloadTitle: 'Tải Desktop Coworker miễn phí.',
+    downloadText: 'Hai bản dùng cùng tài khoản và cùng tính năng. Chỉ cần chọn đúng hệ điều hành bạn đang dùng.',
+    downloadRecommended: 'Bản phổ biến',
+    windowsMeta: 'Windows 10/11 · 64-bit', windowsDownloadText: 'Bộ cài .exe dành cho máy Windows x64.', windowsDownloadCta: 'Tải cho Windows',
+    windowsNoticeTitle: 'Lưu ý khi cài trên Windows', windowsNoticeText: 'Bộ cài hiện chưa được ký số nên Windows SmartScreen có thể hiện cảnh báo “Windows đã bảo vệ máy tính của bạn”. Chọn “Thông tin thêm” (More info) rồi “Vẫn chạy” (Run anyway) để tiếp tục.',
+    macMeta: 'Apple Silicon · M1/M2/M3/M4 trở lên', macDownloadText: 'Bản .dmg hiện dành cho Mac dùng chip Apple Silicon. Chưa hỗ trợ Mac Intel.', macDownloadCta: 'Tải cho macOS',
+    macNoticeTitle: 'Lưu ý khi cài trên macOS', macNoticeText: 'Bản hiện tại chưa ký Developer ID/notarize nên macOS có thể chặn lần mở đầu tiên. Nhấp phải vào ứng dụng → Open; nếu vẫn bị chặn, vào System Settings → Privacy & Security → Open Anyway.',
+    downloadSourceNote: 'Nên chỉ tải bộ cài từ trang này hoặc kho phát hành chính thức của Desktop Coworker.',
     outcomeEyebrow: 'TỪ “CHỈ CÁCH” SANG “LÀM GIÚP”', outcomeTitle: 'Một công cụ, nhiều việc rất đời thường.',
     outcome1Title: 'Đọc và tổng hợp cả thư mục', outcome1Text: 'Tìm thông tin trong nhiều tài liệu, so sánh thay đổi, tạo bản tổng hợp mà không phải upload từng file.',
     outcome2Title: 'Dọn và đổi tên file hàng loạt', outcome2Text: 'Sắp xếp thư mục, đổi tên, phân loại và xử lý những đống file lộn xộn.',
@@ -57,7 +66,7 @@ const copy = {
     priceStartLabel: 'Bắt đầu trả phí chỉ từ', priceStartText: 'Cho toàn bộ tính năng.', priceDetailText: 'Chi tiết thời hạn và các gói khác xem ngay trong ứng dụng.', priceCta: 'Tải và dùng thử miễn phí',
     faqEyebrow: 'HỎI NHANH', faqTitle: 'Những điều nên biết trước khi cài.',
     faq1Q: 'Tôi có cần biết code hay MCP không?', faq1A: 'Không. Khi sử dụng, bạn chủ yếu nói việc muốn làm bằng ngôn ngữ bình thường. Phần kết nối ban đầu đã có hướng dẫn từng bước.',
-    faq2Q: 'Tôi cần máy và tài khoản gì?', faq2A: 'Ứng dụng dành cho Windows. Bạn cần tài khoản ChatGPT có thể bật Developer mode và dùng kết nối tương ứng; khả năng này có thể phụ thuộc gói hoặc chính sách workspace của tài khoản ChatGPT.',
+    faq2Q: 'Tôi cần máy và tài khoản gì?', faq2A: 'Ứng dụng có bản Windows 10/11 x64 và macOS Apple Silicon. Bạn cần tài khoản ChatGPT có thể bật Developer mode và dùng kết nối tương ứng; khả năng này có thể phụ thuộc gói hoặc chính sách workspace của tài khoản ChatGPT.',
     faq3Q: 'Dùng thử miễn phí có tự hết khi tôi không dùng không?', faq3A: 'Không theo cách một gói 24 giờ theo đồng hồ. Bản hiện tại tính theo thời gian Desktop Coworker thực sự chạy; khi bạn không dùng, thời lượng không tự trôi.',
     faq4Q: 'Thanh toán xong có phải chờ duyệt thủ công không?', faq4A: 'Không theo flow hiện tại. Bạn quét QR hoặc chuyển khoản đúng số tiền và nội dung; hệ thống xác nhận rồi kích hoạt Pro tự động.',
     faq5Q: 'Tôi có thể giới hạn ChatGPT chỉ làm trong một thư mục không?', faq5A: 'Có. Bạn có thể giới hạn phạm vi file theo từng kết nối và bật thêm cơ chế duyệt thao tác nếu muốn kiểm soát chặt hơn.',
@@ -73,10 +82,10 @@ const copy = {
     metaDescription: 'No more uploading files one by one. Point ChatGPT to a folder or document on your PC and describe the result you want. Try free, then continue from ₫10,000.',
     navHow: 'How it works', navUse: 'Real examples', navPrice: 'Cost', navFaq: 'FAQ', navDownload: 'Try free',
     eyebrow: 'Just point ChatGPT to the right place. It handles the rest.',
-    heroTitle: 'Point ChatGPT Web to the right place. Get the work done on your PC.',
+    heroTitle: 'Point ChatGPT Web to the right place. Get the work done on your computer.',
     heroText: 'No more uploading files one by one. Copy the file or folder path from your PC, paste it directly into ChatGPT, and describe the result you want. Desktop Coworker helps ChatGPT read, compare, organize, and handle the work on your computer.',
-    heroPill1: 'For Windows', heroPill2: 'Try free', heroPill3: 'Paid plans from ₫10,000',
-    heroPrimary: 'Try free', heroSecondary: 'See real examples',
+    heroPill1: 'Windows & macOS', heroPill2: 'Try free', heroPill3: 'Paid plans from ₫10,000',
+    heroPrimary: 'Choose your free download', heroSecondary: 'See real examples',
     heroNote: 'Try free · Paid plans start at ₫10,000 · Full plan details are shown in the app',
     heroWorkspaceTitle: 'Today’s work', heroWorkspaceSub: 'Desktop Coworker is helping', heroConnected: 'Connected',
     screenLabel: 'A real task, delegated in ChatGPT',
@@ -104,9 +113,18 @@ const copy = {
     beforeLabel: 'BEFORE', beforeText: 'Find the file → upload it → copy the answer → open the original → make the change → save a new version.', beforeNote: 'ChatGPT answered, but the computer work still stayed with you.',
     nowLabel: 'NOW', nowText: 'Point to the place → describe the result → ChatGPT works within the allowed scope → it reports what it did.', nowNote: 'You spend your time reviewing and deciding instead of repeating the clicks.',
     howEyebrow: 'SET IT UP ONCE', howTitle: 'Then keep using ChatGPT the way you already do.',
-    how1Title: '1. Install the app', how1Text: 'Download the Windows installer and open Desktop Coworker.',
+    how1Title: '1. Install the app', how1Text: 'Choose the Windows or macOS build, download it, and open Desktop Coworker.',
     how2Title: '2. Connect ChatGPT', how2Text: 'The guided setup walks through each step with direct links, copy actions, and screenshots. You can pause and resume later.',
     how3Title: '3. Delegate in chat', how3Text: 'Describe what you want completed. ChatGPT can work with the files and folders you allow.',
+    downloadEyebrow: 'CHOOSE THE RIGHT BUILD FOR YOUR COMPUTER',
+    downloadTitle: 'Download Desktop Coworker for free.',
+    downloadText: 'Both builds use the same account and features. Choose the operating system you use.',
+    downloadRecommended: 'Most common',
+    windowsMeta: 'Windows 10/11 · 64-bit', windowsDownloadText: 'The .exe installer for Windows x64.', windowsDownloadCta: 'Download for Windows',
+    windowsNoticeTitle: 'Windows installation note', windowsNoticeText: 'The installer is not code-signed yet, so Windows SmartScreen may show “Windows protected your PC”. Choose “More info” and then “Run anyway” to continue.',
+    macMeta: 'Apple Silicon · M1/M2/M3/M4 or newer', macDownloadText: 'The current .dmg build is for Apple Silicon Macs. Intel Macs are not supported yet.', macDownloadCta: 'Download for macOS',
+    macNoticeTitle: 'macOS installation note', macNoticeText: 'The current build is not Developer ID signed/notarized yet, so macOS may block the first launch. Right-click the app → Open; if it is still blocked, go to System Settings → Privacy & Security → Open Anyway.',
+    downloadSourceNote: 'Only download installers from this site or the official Desktop Coworker release repository.',
     outcomeEyebrow: 'FROM “HERE IS HOW” TO “DONE”', outcomeTitle: 'One tool, many everyday jobs.',
     outcome1Title: 'Read and summarize whole folders', outcome1Text: 'Search across several documents, compare changes, and create summaries without uploading every file.',
     outcome2Title: 'Clean up and batch-rename files', outcome2Text: 'Organize folders, rename files, classify items, and deal with messy file collections.',
@@ -124,7 +142,7 @@ const copy = {
     priceStartLabel: 'Paid plans start at', priceStartText: 'All features included.', priceDetailText: 'Plan duration and other options are shown inside the app.', priceCta: 'Download and try free',
     faqEyebrow: 'QUICK ANSWERS', faqTitle: 'What to know before installing.',
     faq1Q: 'Do I need to know code or MCP?', faq1A: 'No. You mainly describe the result you want in normal language. The initial connection process has a guided step-by-step flow.',
-    faq2Q: 'What computer and ChatGPT account do I need?', faq2A: 'The app is for Windows. You need a ChatGPT account that can enable Developer mode and use the required connection flow; availability can depend on your plan or workspace policy.',
+    faq2Q: 'What computer and ChatGPT account do I need?', faq2A: 'There are builds for Windows 10/11 x64 and macOS Apple Silicon. You need a ChatGPT account that can enable Developer mode and use the required connection flow; availability can depend on your plan or workspace policy.',
     faq3Q: 'Does the free trial expire while I am not using it?', faq3A: 'Not like a 24-hour wall-clock trial. The current build counts actual Desktop Coworker runtime, so the allowance does not simply tick away while you are not using it.',
     faq4Q: 'Do I have to wait for manual approval after paying?', faq4A: 'Not in the current flow. Pay the exact amount and transfer content shown by QR or bank transfer; the system confirms payment and activates Pro automatically.',
     faq5Q: 'Can I restrict ChatGPT to one folder?', faq5A: 'Yes. File-access scope can be configured per connection, and you can also require approval for higher-impact actions.',
@@ -288,7 +306,9 @@ const caseStudies = {
   ]
 };
 
-const releaseUrl = 'https://github.com/colin-dmme/desktop-coworker-releases/releases/latest';
+const releaseVersion = '1.6.2';
+const windowsDownloadUrl = `https://github.com/colin-dmme/desktop-coworker-releases/releases/download/v${releaseVersion}/DesktopCoworker-Setup-${releaseVersion}-x64.exe`;
+const macDownloadUrl = `https://github.com/colin-dmme/desktop-coworker-releases/releases/download/v${releaseVersion}/DesktopCoworker-${releaseVersion}-macOS-arm64.dmg`;
 const installGuideUrl = 'https://colin-dmme.github.io/desktop-coworker-for-chatgpt/install/';
 const launchOfferEndsAt = new Date('2026-10-07T23:59:59+07:00').getTime();
 let currentLang = 'vi';
@@ -413,7 +433,8 @@ document.querySelectorAll('[data-lang-switch]').forEach((button) => {
   button.addEventListener('click', () => setLanguage(button.dataset.langSwitch));
 });
 
-document.querySelectorAll('[data-download]').forEach((link) => link.setAttribute('href', releaseUrl));
+document.querySelectorAll('[data-download-windows]').forEach((link) => link.setAttribute('href', windowsDownloadUrl));
+document.querySelectorAll('[data-download-mac]').forEach((link) => link.setAttribute('href', macDownloadUrl));
 document.querySelectorAll('[data-install-guide]').forEach((link) => link.setAttribute('href', installGuideUrl));
 
 setLanguage(initialLanguage());
