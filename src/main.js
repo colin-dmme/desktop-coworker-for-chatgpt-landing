@@ -4,7 +4,7 @@ const copy = {
   vi: {
     metaTitle: 'Desktop Coworker for ChatGPT — Chỉ chỗ cho ChatGPT, việc làm ngay trên máy bạn',
     metaDescription: 'Không cần tải từng file lên ChatGPT. Chỉ cần chỉ thư mục hoặc tài liệu trên PC và nói kết quả bạn muốn. Dùng thử miễn phí, trả phí từ 10.000đ.',
-    navHow: 'Cách hoạt động', navUse: 'Ví dụ thực tế', navPrice: 'Chi phí', navFaq: 'Hỏi đáp', navDownload: 'Dùng thử miễn phí',
+    navHow: 'Cách hoạt động', navUse: 'Ví dụ thực tế', navPrice: 'Chi phí', navGuide: 'Hướng dẫn kết nối', navFaq: 'Hỏi đáp', navDownload: 'Dùng thử miễn phí',
     eyebrow: 'Bạn chỉ cần chỉ chỗ. ChatGPT lo phần còn lại.',
     heroTitle: 'Bạn chỉ cần chỉ chỗ cho ChatGPT Web. Việc được làm ngay trên máy của bạn.',
     heroText: 'Không còn phải tải lên từng file. Chỉ cần copy đường dẫn file hoặc thư mục trên PC, dán thẳng vào ChatGPT và nói kết quả bạn muốn. Desktop Coworker giúp ChatGPT đọc, đối chiếu, sắp xếp và xử lý ngay trên máy của bạn.',
@@ -80,7 +80,7 @@ const copy = {
   en: {
     metaTitle: 'Desktop Coworker for ChatGPT — Point ChatGPT to the files on your PC',
     metaDescription: 'No more uploading files one by one. Point ChatGPT to a folder or document on your PC and describe the result you want. Try free, then continue from ₫10,000.',
-    navHow: 'How it works', navUse: 'Real examples', navPrice: 'Cost', navFaq: 'FAQ', navDownload: 'Try free',
+    navHow: 'How it works', navUse: 'Real examples', navPrice: 'Cost', navGuide: 'Connection guide', navFaq: 'FAQ', navDownload: 'Try free',
     eyebrow: 'Just point ChatGPT to the right place. It handles the rest.',
     heroTitle: 'Point ChatGPT Web to the right place. Get the work done on your computer.',
     heroText: 'No more uploading files one by one. Copy the file or folder path from your PC, paste it directly into ChatGPT, and describe the result you want. Desktop Coworker helps ChatGPT read, compare, organize, and handle the work on your computer.',
