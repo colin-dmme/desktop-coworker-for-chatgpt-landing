@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Connect ChatGPT — Desktop Coworker</title>
+  <meta name="description" content="Illustrated 6-step guide to connect ChatGPT to Desktop Coworker, from creating a Tunnel to verifying the connection.">
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="../guide.css">
+</head>
+<body>
+<header class="top"><div class="wrap topin"><a class="brand" href="/?lang=en"><span class="mark">DC</span><span>Desktop Coworker</span></a><a class="home" href="/?lang=en">← Back to home</a></div></header>
+
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">CONNECTION GUIDE · 6 STEPS</span>
+  <h1>Connect ChatGPT to Desktop Coworker from start to finish.</h1>
+  <p>Follow these six steps once. Every step includes a screenshot and a direct link, so you do not have to guess where to click.</p>
+  <div class="heroBtns"><a class="primary" href="#step-1">Start with Step 1</a><a class="secondary" href="#troubleshooting">I have a problem</a></div>
+  <div class="quick">
+    <div><strong>⏱ About 5–10 minutes</strong><span>One-time setup for each connection.</span></div>
+    <div><strong>✅ Use Step by step</strong><span>Most users do not need Full form.</span></div>
+    <div><strong>🔐 Keep the API key private</strong><span>Paste the Runtime API key only into Desktop Coworker.</span></div>
+  </div>
+</div></section>
+
+<div class="wrap toc"><nav class="tocbox" aria-label="Steps"><a href="#step-1">1. Name & Workspace</a><a href="#step-2">2. Tunnel</a><a href="#step-3">3. API key</a><a href="#step-4">4. Start</a><a href="#step-5">5. Developer mode</a><a href="#step-6">6. Plugin</a><a href="#verify">Verify</a></nav></div>
+
+<main class="wrap">
+<article class="step" id="step-1"><div class="num">1</div><div>
+  <h2>Name the connection and choose a Workspace</h2>
+  <p class="lead">In Desktop Coworker, select <strong>Add connection</strong> and keep <strong>Step by step</strong> selected.</p>
+  <ul><li><strong>Connection name:</strong> choose a name that makes the ChatGPT account easy to recognize.</li><li><strong>Workspace:</strong> choose the folder ChatGPT should start working from first.</li></ul>
+  <div class="note"><strong>Workspace is not an access limit by default.</strong> To restrict folder access, use <strong>Full form → Safety</strong> after setup.</div>
+  <p>Select <strong>Continue</strong>.</p>
+  <figure class="shot"><img src="../assets/step-1-workspace.jpg" alt="Choose Workspace in Desktop Coworker" loading="lazy"><figcaption class="caption">Choose the folder that best matches the work you normally delegate to ChatGPT.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-2"><div class="num">2</div><div>
+  <h2>Create a Secure MCP Tunnel</h2>
+  <p class="lead">The Tunnel is the secure path that lets ChatGPT on the web find Desktop Coworker running on your computer.</p>
+  <ol><li>Open the Tunnel page from the wizard.</li><li>Select <strong>Create tunnel</strong> and give it a recognizable name.</li><li>Associate it with the <strong>correct ChatGPT workspace</strong>.</li><li>Copy the <strong>Tunnel ID</strong> beginning with <strong>tunnel_</strong>.</li><li>Paste it into Desktop Coworker and select <strong>Continue</strong>.</li></ol>
+  <div class="inlineBtns"><a class="open" href="https://platform.openai.com/settings/organization/tunnels" target="_blank" rel="noopener">Open OpenAI Tunnels ↗</a></div>
+  <div class="note">Creating or managing a Tunnel requires <strong>Tunnels Read + Manage</strong>. Running it and selecting it in ChatGPT requires <strong>Tunnels Read + Use</strong>.</div>
+  <figure class="shot"><img src="../assets/step-2-tunnel.jpg" alt="Create Secure MCP Tunnel" loading="lazy"><figcaption class="caption">Create the Tunnel, then copy its Tunnel ID back into Desktop Coworker.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-3"><div class="num">3</div><div>
+  <h2>Create a Runtime API key</h2>
+  <p class="lead">This key lets Desktop Coworker authenticate with OpenAI and run the Tunnel.</p>
+  <ol><li>Open API Keys.</li><li>Select <strong>Create new secret key</strong>.</li><li>Name it “Desktop Coworker” or similar.</li><li><strong>Copy the key immediately when it appears.</strong></li><li>Paste it into <strong>Runtime API key</strong> and select <strong>Continue</strong>.</li></ol>
+  <div class="inlineBtns"><a class="open" href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">Open OpenAI API Keys ↗</a></div>
+  <div class="note warn"><strong>Important:</strong> never send, screenshot, or share the Runtime API key. If exposed, revoke it and create a replacement.</div>
+  <figure class="shot"><img src="../assets/step-3-api-key.jpg" alt="Create Runtime API key" loading="lazy"><figcaption class="caption">Create a secret key dedicated to the Desktop Coworker connection.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-4"><div class="num">4</div><div>
+  <h2>Create and start the connection on this computer</h2>
+  <p class="lead">Once the connection name, Workspace, Tunnel ID, and Runtime API key are ready, select <strong>Create & start</strong>.</p>
+  <p>Desktop Coworker saves the profile, starts the MCP Server, starts the Secure Tunnel, and chooses network ports automatically. Wait until the connection shows green <strong>Ready/Running</strong>.</p>
+  <div class="note">If you see a port conflict, choose <strong>Change ports and retry</strong>.</div>
+  <p>Then select <strong>Continue to ChatGPT</strong>.</p>
+  <figure class="shot"><img src="../assets/step-4-running.png" alt="Desktop Coworker connection running" loading="lazy"><figcaption class="caption">The computer side is ready when the connection is Ready/Running.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-5"><div class="num">5</div><div>
+  <h2>Enable Developer mode in ChatGPT</h2>
+  <p class="lead">Open ChatGPT using the exact account/workspace you want to connect.</p>
+  <p>Go to <strong>Settings → Security and login → Developer mode</strong> and enable Developer mode. If it is already enabled, continue.</p>
+  <div class="inlineBtns"><a class="open" href="https://chatgpt.com/plugins#settings/Security" target="_blank" rel="noopener">Open ChatGPT Settings ↗</a></div>
+  <div class="note">An administrator may need to allow Developer mode in company- or organization-managed workspaces.</div>
+  <figure class="shot"><img src="../assets/step-5-developer-mode.jpg" alt="Enable Developer mode in ChatGPT" loading="lazy"><figcaption class="caption">Developer mode allows you to create your own Plugin connection.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-6"><div class="num">6</div><div>
+  <h2>Create a Plugin and select the correct Tunnel</h2>
+  <p class="lead">Keep Desktop Coworker running and the connection in Ready/Running state.</p>
+  <ol><li>Open <strong>Settings → Plugins</strong> in ChatGPT.</li><li>Select <strong>+</strong> to create a new Developer mode Plugin.</li><li>Under <strong>Connection</strong>, choose <strong>Tunnel</strong>.</li><li>Select the Tunnel from Step 2 or paste its Tunnel ID.</li><li>Enter a Plugin name.</li><li>Set <strong>Authentication</strong> to <strong>No Auth</strong>.</li><li>Verify the Tunnel ID and select <strong>Create</strong>.</li></ol>
+  <div class="inlineBtns"><a class="open" href="https://chatgpt.com/plugins#settings/Connectors?create-connector=true&amp;redirectAfter=%2Fplugins" target="_blank" rel="noopener">Open Plugin setup ↗</a></div>
+  <figure class="shot"><img src="../assets/step-6-plugin.jpg" alt="Create ChatGPT Plugin with Tunnel" loading="lazy"><figcaption class="caption">Use the correct Tunnel ID and leave Authentication as No Auth.</figcaption></figure>
+  <p>After the Plugin is created, return to Desktop Coworker and select <strong>Finish</strong>.</p>
+</div></article>
+
+<section class="verify" id="verify">
+  <h2>Verify the connection</h2>
+  <p>Open a new chat. If ChatGPT asks you to enable or connect the Plugin, choose the one you just created and try:</p>
+  <blockquote>“Use Desktop Coworker to check the computer connection and tell me the current working folder.”</blockquote>
+  <p>Or: “List the files in the current Workspace without changing anything.” If ChatGPT can call the tools and return local data, setup is complete.</p>
+  <div class="verifyGrid"><img src="../assets/verify-connect.jpg" alt="ChatGPT connection request" loading="lazy"><img src="../assets/verify-success.jpg" alt="ChatGPT connection successful" loading="lazy"></div>
+</section>
+
+<section class="trouble" id="troubleshooting">
+  <h2>Quick troubleshooting</h2>
+  <p>Start with the symptom before digging through long logs.</p>
+  <table><thead><tr><th>Symptom</th><th>What to check</th></tr></thead><tbody>
+    <tr><td>Tunnel is missing in ChatGPT</td><td>Confirm it is associated with the correct ChatGPT workspace and the account has <strong>Tunnels Read + Use</strong>.</td></tr>
+    <tr><td>Cannot create a Tunnel</td><td>Check <strong>Tunnels Read + Manage</strong> on OpenAI Platform.</td></tr>
+    <tr><td>Plugin exists but will not connect</td><td>Make sure Desktop Coworker is open and <strong>Ready/Running</strong>, then refresh the Plugin or open a new chat.</td></tr>
+    <tr><td>Runtime API key fails</td><td>Create a new key, copy the full value, and paste it into Desktop Coworker.</td></tr>
+    <tr><td>Wrong starting folder</td><td>Edit the connection <strong>Workspace</strong>.</td></tr>
+    <tr><td>Need restricted folder access</td><td>Open <strong>Full form → Safety</strong> and choose the appropriate access scope.</td></tr>
+  </tbody></table>
+  <p>If it still fails, open <strong>Logs</strong> in Desktop Coworker and review both <strong>MCP Server log</strong> and <strong>Secure Tunnel log</strong>.</p>
+</section>
+
+<section class="done"><h2>You do not need to repeat all six steps next time</h2><p>Open Desktop Coworker, wait for Ready/Running, then use ChatGPT normally. With Auto-start enabled, the connection starts when the app opens.</p><div class="heroBtns"><a class="primary" href="/?lang=en">Back to home</a></div></section>
+</main>
+
+<footer class="footer"><div class="wrap">Desktop Coworker is an independent project and is not affiliated with or endorsed by OpenAI.</div></footer>
+</body>
+</html>

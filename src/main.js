@@ -38,7 +38,7 @@ const copy = {
     nowLabel: 'BÂY GIỜ', nowText: 'Chỉ chỗ → nói kết quả cần → ChatGPT làm trong phạm vi được phép → báo lại những gì đã làm.', nowNote: 'Bạn dành thời gian để xem và quyết định, thay vì làm tay từng bước.',
     howEyebrow: 'CÀI MỘT LẦN', howTitle: 'Sau đó cứ dùng ChatGPT như bình thường.',
     how1Title: '1. Cài ứng dụng', how1Text: 'Chọn đúng bản Windows hoặc macOS, tải về và mở Desktop Coworker.',
-    how2Title: '2. Kết nối với ChatGPT', how2Text: 'Trình hướng dẫn đi từng bước, có link trực tiếp, nút copy và hình minh họa. Bạn có thể dừng rồi làm tiếp sau.',
+    how2Title: '2. Kết nối với ChatGPT', how2Text: 'Trình hướng dẫn đi từng bước, có link trực tiếp, nút copy và hình minh họa. Bạn có thể dừng rồi làm tiếp sau.', howGuideCta: 'Xem hướng dẫn 6 bước →',
     how3Title: '3. Giao việc trong chat', how3Text: 'Nói việc muốn hoàn thành. ChatGPT có thể làm với những file và thư mục bạn cho phép.',
     downloadEyebrow: 'CHỌN ĐÚNG BẢN CHO MÁY CỦA BẠN',
     downloadTitle: 'Tải Desktop Coworker miễn phí.',
@@ -114,7 +114,7 @@ const copy = {
     nowLabel: 'NOW', nowText: 'Point to the place → describe the result → ChatGPT works within the allowed scope → it reports what it did.', nowNote: 'You spend your time reviewing and deciding instead of repeating the clicks.',
     howEyebrow: 'SET IT UP ONCE', howTitle: 'Then keep using ChatGPT the way you already do.',
     how1Title: '1. Install the app', how1Text: 'Choose the Windows or macOS build, download it, and open Desktop Coworker.',
-    how2Title: '2. Connect ChatGPT', how2Text: 'The guided setup walks through each step with direct links, copy actions, and screenshots. You can pause and resume later.',
+    how2Title: '2. Connect ChatGPT', how2Text: 'The guided setup walks through each step with direct links, copy actions, and screenshots. You can pause and resume later.', howGuideCta: 'Open the 6-step guide →',
     how3Title: '3. Delegate in chat', how3Text: 'Describe what you want completed. ChatGPT can work with the files and folders you allow.',
     downloadEyebrow: 'CHOOSE THE RIGHT BUILD FOR YOUR COMPUTER',
     downloadTitle: 'Download Desktop Coworker for free.',
@@ -622,6 +622,10 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach((node) => {
     const key = node.dataset.i18n;
     if (dict[key] !== undefined) node.textContent = dict[key];
+  });
+
+  document.querySelectorAll('[data-guide-link]').forEach((link) => {
+    link.setAttribute('href', currentLang === 'en' ? '/connect-chatgpt/en/' : '/connect-chatgpt/');
   });
 
   document.querySelectorAll('[data-lang-switch]').forEach((button) => {

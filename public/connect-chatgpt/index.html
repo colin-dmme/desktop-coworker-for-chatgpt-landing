@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hướng dẫn kết nối ChatGPT — Desktop Coworker</title>
+  <meta name="description" content="Hướng dẫn 6 bước kết nối ChatGPT với Desktop Coworker, có ảnh minh họa từ tạo Tunnel đến kiểm tra kết nối.">
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="./guide.css">
+</head>
+<body>
+<header class="top"><div class="wrap topin"><a class="brand" href="/"><span class="mark">DC</span><span>Desktop Coworker</span></a><a class="home" href="/">← Về trang chủ</a></div></header>
+
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">HƯỚNG DẪN KẾT NỐI · 6 BƯỚC</span>
+  <h1>Kết nối ChatGPT với Desktop Coworker từ đầu đến cuối.</h1>
+  <p>Làm đúng 6 bước dưới đây một lần. Mỗi bước đều có ảnh minh họa và link mở thẳng tới nơi cần thiết, để bạn không phải tự đoán mình cần bấm ở đâu.</p>
+  <div class="heroBtns"><a class="primary" href="#step-1">Bắt đầu từ Bước 1</a><a class="secondary" href="#troubleshooting">Tôi đang gặp lỗi</a></div>
+  <div class="quick">
+    <div><strong>⏱ Khoảng 5–10 phút</strong><span>Thiết lập một lần cho mỗi kết nối.</span></div>
+    <div><strong>✅ Dùng Step by step</strong><span>Người mới không cần vào Full form.</span></div>
+    <div><strong>🔐 Không chia sẻ API key</strong><span>Runtime API key chỉ dán vào Desktop Coworker.</span></div>
+  </div>
+</div></section>
+
+<div class="wrap toc"><nav class="tocbox" aria-label="Các bước"><a href="#step-1">1. Tên & Workspace</a><a href="#step-2">2. Tunnel</a><a href="#step-3">3. API key</a><a href="#step-4">4. Start</a><a href="#step-5">5. Developer mode</a><a href="#step-6">6. Plugin</a><a href="#verify">Kiểm tra</a></nav></div>
+
+<main class="wrap">
+<article class="step" id="step-1"><div class="num">1</div><div>
+  <h2>Đặt tên kết nối và chọn Workspace</h2>
+  <p class="lead">Trong Desktop Coworker, chọn <strong>Add connection</strong> và giữ tab <strong>Step by step</strong>.</p>
+  <ul><li><strong>Connection name:</strong> đặt tên để bạn nhận ra tài khoản ChatGPT nào đang nối với máy này, ví dụ “ChatGPT cá nhân” hoặc “ChatGPT công việc”.</li><li><strong>Workspace:</strong> chọn thư mục ChatGPT nên bắt đầu làm việc trước, ví dụ D:\ hoặc một thư mục dự án cụ thể.</li></ul>
+  <div class="note"><strong>Workspace không mặc định là giới hạn truy cập.</strong> Nó chỉ là nơi ChatGPT ưu tiên bắt đầu. Muốn giới hạn thư mục, sau khi kết nối xong hãy dùng <strong>Full form → Safety</strong>.</div>
+  <p>Nhấn <strong>Continue</strong>.</p>
+  <figure class="shot"><img src="./assets/step-1-workspace.jpg" alt="Chọn Workspace trong Desktop Coworker" loading="lazy"><figcaption class="caption">Chọn thư mục làm việc phù hợp với công việc bạn thường giao cho ChatGPT.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-2"><div class="num">2</div><div>
+  <h2>Tạo Secure MCP Tunnel</h2>
+  <p class="lead">Tunnel là đường kết nối an toàn giúp ChatGPT trên web tìm thấy Desktop Coworker đang chạy trên máy của bạn.</p>
+  <ol><li>Nhấn nút mở trang Tunnel trong wizard.</li><li>Chọn <strong>Create tunnel</strong> và đặt tên dễ nhận biết.</li><li>Gắn Tunnel với <strong>đúng ChatGPT workspace</strong> bạn sẽ sử dụng.</li><li>Sao chép <strong>Tunnel ID</strong> bắt đầu bằng <strong>tunnel_</strong>.</li><li>Quay lại Desktop Coworker, dán Tunnel ID rồi nhấn <strong>Continue</strong>.</li></ol>
+  <div class="inlineBtns"><a class="open" href="https://platform.openai.com/settings/organization/tunnels" target="_blank" rel="noopener">Mở OpenAI Tunnels ↗</a></div>
+  <div class="note">Để tạo hoặc quản lý Tunnel, tài khoản cần quyền <strong>Tunnels Read + Manage</strong>. Để chạy Tunnel và chọn nó trong ChatGPT, cần <strong>Tunnels Read + Use</strong>.</div>
+  <figure class="shot"><img src="./assets/step-2-tunnel.jpg" alt="Tạo Secure MCP Tunnel" loading="lazy"><figcaption class="caption">Tạo Tunnel rồi copy Tunnel ID về Desktop Coworker.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-3"><div class="num">3</div><div>
+  <h2>Tạo Runtime API key</h2>
+  <p class="lead">Key này giúp Desktop Coworker xác thực với OpenAI để vận hành Tunnel.</p>
+  <ol><li>Mở trang API Keys.</li><li>Chọn <strong>Create new secret key</strong>.</li><li>Đặt tên như “Desktop Coworker”.</li><li><strong>Copy key ngay khi nó xuất hiện.</strong></li><li>Dán vào ô <strong>Runtime API key</strong> trong wizard rồi nhấn <strong>Continue</strong>.</li></ol>
+  <div class="inlineBtns"><a class="open" href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">Mở OpenAI API Keys ↗</a></div>
+  <div class="note warn"><strong>Quan trọng:</strong> không gửi, chụp màn hình hoặc chia sẻ Runtime API key. Nếu key bị lộ, hãy thu hồi key cũ và tạo key mới.</div>
+  <figure class="shot"><img src="./assets/step-3-api-key.jpg" alt="Tạo Runtime API key" loading="lazy"><figcaption class="caption">Tạo secret key riêng cho kết nối Desktop Coworker.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-4"><div class="num">4</div><div>
+  <h2>Tạo và bật kết nối trên máy</h2>
+  <p class="lead">Khi tên, Workspace, Tunnel ID và Runtime API key đã đủ, nhấn <strong>Create & start</strong>.</p>
+  <p>Desktop Coworker sẽ lưu cấu hình, khởi động MCP Server, mở Secure Tunnel và tự chọn cổng phù hợp. Chờ tới khi kết nối hiện <strong>Ready/Running</strong> màu xanh.</p>
+  <div class="note">Nếu gặp xung đột cổng, chọn <strong>Change ports and retry</strong> để ứng dụng tự cấp cổng trống rồi thử lại.</div>
+  <p>Khi đã xanh, nhấn <strong>Continue to ChatGPT</strong>.</p>
+  <figure class="shot"><img src="./assets/step-4-running.png" alt="Kết nối Desktop Coworker đang chạy" loading="lazy"><figcaption class="caption">Phần phía máy tính hoàn tất khi kết nối ở trạng thái Ready/Running.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-5"><div class="num">5</div><div>
+  <h2>Bật Developer mode trong ChatGPT</h2>
+  <p class="lead">Mở ChatGPT bằng đúng tài khoản/workspace bạn muốn nối.</p>
+  <p>Vào <strong>Settings → Security and login → Developer mode</strong> rồi bật Developer mode. Nếu đã bật sẵn, chỉ cần tiếp tục.</p>
+  <div class="inlineBtns"><a class="open" href="https://chatgpt.com/plugins#settings/Security" target="_blank" rel="noopener">Mở ChatGPT Settings ↗</a></div>
+  <div class="note">Với workspace do công ty hoặc tổ chức quản lý, quản trị viên có thể phải cấp quyền Developer mode trước.</div>
+  <figure class="shot"><img src="./assets/step-5-developer-mode.jpg" alt="Bật Developer mode trong ChatGPT" loading="lazy"><figcaption class="caption">Bật Developer mode để ChatGPT cho phép tạo Plugin riêng.</figcaption></figure>
+</div></article>
+
+<article class="step" id="step-6"><div class="num">6</div><div>
+  <h2>Tạo Plugin và chọn đúng Tunnel</h2>
+  <p class="lead">Giữ Desktop Coworker đang chạy và kết nối ở trạng thái Ready/Running.</p>
+  <ol><li>Mở <strong>Settings → Plugins</strong> trong ChatGPT.</li><li>Nhấn <strong>+</strong> để tạo Plugin mới ở Developer mode.</li><li>Trong <strong>Connection</strong>, chọn <strong>Tunnel</strong>.</li><li>Chọn Tunnel vừa tạo hoặc dán Tunnel ID từ Bước 2.</li><li>Đặt tên Plugin, ví dụ “COLINPC” hoặc “Desktop Coworker”.</li><li>Ở <strong>Authentication</strong>, chọn <strong>No Auth</strong>.</li><li>Kiểm tra lại rồi nhấn <strong>Create</strong>.</li></ol>
+  <div class="inlineBtns"><a class="open" href="https://chatgpt.com/plugins#settings/Connectors?create-connector=true&amp;redirectAfter=%2Fplugins" target="_blank" rel="noopener">Mở trang tạo Plugin ↗</a></div>
+  <figure class="shot"><img src="./assets/step-6-plugin.jpg" alt="Tạo Plugin trong ChatGPT bằng Tunnel" loading="lazy"><figcaption class="caption">Chọn đúng Tunnel ID, đặt tên Plugin và để Authentication là No Auth.</figcaption></figure>
+  <p>Sau khi Plugin tạo thành công, quay lại Desktop Coworker và nhấn <strong>Finish</strong>.</p>
+</div></article>
+
+<section class="verify" id="verify">
+  <h2>Kiểm tra kết nối đã hoạt động chưa</h2>
+  <p>Mở một chat mới. Nếu ChatGPT hỏi bật hoặc kết nối Plugin vừa tạo, hãy chọn đúng Plugin đó rồi thử:</p>
+  <blockquote>“Dùng Desktop Coworker kiểm tra kết nối với máy tính và cho tôi biết thư mục làm việc hiện tại.”</blockquote>
+  <p>Hoặc: “Liệt kê các file trong Workspace hiện tại, không sửa gì.” Nếu ChatGPT gọi được tool và trả về dữ liệu từ máy, bạn đã kết nối xong.</p>
+  <div class="verifyGrid"><img src="./assets/verify-connect.jpg" alt="ChatGPT yêu cầu kết nối" loading="lazy"><img src="./assets/verify-success.jpg" alt="Kết nối ChatGPT thành công" loading="lazy"></div>
+</section>
+
+<section class="trouble" id="troubleshooting">
+  <h2>Nếu kết nối không được</h2>
+  <p>Kiểm tra theo triệu chứng trước khi phải đọc log dài.</p>
+  <table><thead><tr><th>Hiện tượng</th><th>Kiểm tra nhanh</th></tr></thead><tbody>
+    <tr><td>Không thấy Tunnel trong ChatGPT</td><td>Kiểm tra Tunnel đã gắn đúng ChatGPT workspace và tài khoản có <strong>Tunnels Read + Use</strong>.</td></tr>
+    <tr><td>Không tạo được Tunnel</td><td>Kiểm tra quyền <strong>Tunnels Read + Manage</strong> trên OpenAI Platform.</td></tr>
+    <tr><td>Plugin đã tạo nhưng không kết nối</td><td>Đảm bảo Desktop Coworker đang mở và kết nối ở <strong>Ready/Running</strong>. Sau đó refresh Plugin hoặc mở chat mới.</td></tr>
+    <tr><td>Runtime API key báo lỗi</td><td>Tạo key mới, copy đầy đủ và dán lại vào Desktop Coworker.</td></tr>
+    <tr><td>ChatGPT bắt đầu ở sai thư mục</td><td>Sửa <strong>Workspace</strong> của kết nối.</td></tr>
+    <tr><td>Muốn giới hạn chỉ một số thư mục</td><td>Mở <strong>Full form → Safety</strong> và chọn phạm vi truy cập phù hợp.</td></tr>
+  </tbody></table>
+  <p>Nếu vẫn lỗi, mở <strong>Logs</strong> trong Desktop Coworker và xem cả <strong>MCP Server log</strong> lẫn <strong>Secure Tunnel log</strong>.</p>
+</section>
+
+<section class="done"><h2>Những lần sau không cần làm lại 6 bước</h2><p>Mở Desktop Coworker, chờ kết nối Ready/Running rồi dùng ChatGPT như bình thường. Nếu Auto-start đang bật, kết nối sẽ tự khởi động khi ứng dụng mở.</p><div class="heroBtns"><a class="primary" href="/">Về trang chủ</a></div></section>
+</main>
+
+<footer class="footer"><div class="wrap">Desktop Coworker là dự án độc lập, không liên kết hoặc được OpenAI chứng thực.</div></footer>
+</body>
+</html>
