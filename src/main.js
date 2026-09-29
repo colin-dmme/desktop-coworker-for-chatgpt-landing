@@ -44,9 +44,9 @@ const copy = {
     downloadTitle: 'Tải Desktop Coworker miễn phí.',
     downloadText: 'Hai bản dùng cùng tài khoản và cùng tính năng. Chỉ cần chọn đúng hệ điều hành bạn đang dùng.',
     downloadRecommended: 'Bản phổ biến',
-    windowsMeta: 'Windows 10/11 · 64-bit · v1.7.1', windowsDownloadText: 'Bộ cài .exe dành cho máy Windows x64.', windowsDownloadCta: 'Tải cho Windows',
+    windowsMeta: 'Windows 10/11 · 64-bit · v1.7.2', windowsDownloadText: 'Bộ cài .exe dành cho máy Windows x64.', windowsDownloadCta: 'Tải cho Windows',
     windowsNoticeTitle: 'Lưu ý khi cài trên Windows', windowsNoticeText: 'Bộ cài hiện chưa được ký số nên Windows SmartScreen có thể hiện cảnh báo “Windows đã bảo vệ máy tính của bạn”. Chọn “Thông tin thêm” (More info) rồi “Vẫn chạy” (Run anyway) để tiếp tục.',
-    macMeta: 'Apple Silicon · M1/M2/M3/M4 trở lên · v1.7.0', macDownloadText: 'Bộ cài .dmg dành cho Mac Apple Silicon. Chưa hỗ trợ Mac Intel.', macDownloadCta: 'Tải cho macOS',
+    macMeta: 'Apple Silicon · M1/M2/M3/M4 trở lên', macDownloadText: 'Kho phát hành hiện chưa có file .dmg cho macOS. Mở GitHub Releases để kiểm tra khi có bản mới.', macDownloadCta: 'Xem GitHub Releases',
     macNoticeTitle: 'Lưu ý khi cài trên macOS', macNoticeText: 'Bản hiện tại chưa ký Developer ID/notarize nên macOS có thể chặn lần mở đầu tiên. Nhấp phải vào ứng dụng → Open; nếu vẫn bị chặn, vào System Settings → Privacy & Security → Open Anyway.',
     downloadSourceNote: 'Nên chỉ tải bộ cài từ trang này hoặc kho phát hành chính thức của Desktop Coworker.',
     outcomeEyebrow: 'TỪ “CHỈ CÁCH” SANG “LÀM GIÚP”', outcomeTitle: 'Một công cụ, nhiều việc rất đời thường.',
@@ -120,9 +120,9 @@ const copy = {
     downloadTitle: 'Download Desktop Coworker for free.',
     downloadText: 'Both builds use the same account and features. Choose the operating system you use.',
     downloadRecommended: 'Most common',
-    windowsMeta: 'Windows 10/11 · 64-bit · v1.7.1', windowsDownloadText: 'The .exe installer for Windows x64.', windowsDownloadCta: 'Download for Windows',
+    windowsMeta: 'Windows 10/11 · 64-bit · v1.7.2', windowsDownloadText: 'The .exe installer for Windows x64.', windowsDownloadCta: 'Download for Windows',
     windowsNoticeTitle: 'Windows installation note', windowsNoticeText: 'The installer is not code-signed yet, so Windows SmartScreen may show “Windows protected your PC”. Choose “More info” and then “Run anyway” to continue.',
-    macMeta: 'Apple Silicon · M1/M2/M3/M4 or newer · v1.7.0', macDownloadText: 'The .dmg installer for Apple Silicon Macs. Intel Macs are not supported yet.', macDownloadCta: 'Download for macOS',
+    macMeta: 'Apple Silicon · M1/M2/M3/M4 or newer', macDownloadText: 'The release repository does not currently include a macOS .dmg. Open GitHub Releases to check for a newer build.', macDownloadCta: 'View GitHub Releases',
     macNoticeTitle: 'macOS installation note', macNoticeText: 'The current build is not Developer ID signed/notarized yet, so macOS may block the first launch. Right-click the app → Open; if it is still blocked, go to System Settings → Privacy & Security → Open Anyway.',
     downloadSourceNote: 'Only download installers from this site or the official Desktop Coworker release repository.',
     outcomeEyebrow: 'FROM “HERE IS HOW” TO “DONE”', outcomeTitle: 'One tool, many everyday jobs.',
@@ -445,10 +445,10 @@ const caseFlows = {
   }
 };
 
-const windowsReleaseVersion = '1.7.1';
-const macReleaseVersion = '1.7.0';
+const releaseRepoUrl = 'https://github.com/colin-dmme/desktop-coworker-releases';
+const windowsReleaseVersion = '1.7.2';
 const windowsDownloadUrl = `https://github.com/colin-dmme/desktop-coworker-releases/releases/download/v${windowsReleaseVersion}/DesktopCoworker-Payment-Setup-${windowsReleaseVersion}-x64.exe`;
-const macDownloadUrl = `https://github.com/colin-dmme/desktop-coworker-releases/releases/download/v${macReleaseVersion}/DesktopCoworker-${macReleaseVersion}-macOS-arm64.dmg`;
+const macDownloadUrl = `${releaseRepoUrl}/releases`;
 const installGuideUrl = 'https://colin-dmme.github.io/desktop-coworker-for-chatgpt/install/';
 const launchOfferEndsAt = new Date('2026-10-07T23:59:59+07:00').getTime();
 let currentLang = 'vi';
