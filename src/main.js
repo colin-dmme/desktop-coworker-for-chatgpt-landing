@@ -3,14 +3,14 @@ import './style.css';
 const copy = {
   vi: {
     metaTitle: 'Desktop Coworker for ChatGPT — Chỉ chỗ cho ChatGPT, việc làm ngay trên máy bạn',
-    metaDescription: 'Không cần tải từng file lên ChatGPT. Chỉ cần chỉ thư mục hoặc tài liệu trên PC và nói kết quả bạn muốn. Dùng thử miễn phí, trả phí từ 10.000đ.',
+    metaDescription: 'Không cần tải từng file lên ChatGPT. Chỉ cần chỉ thư mục hoặc tài liệu trên PC và nói kết quả bạn muốn. Dùng thử miễn phí 3 ngày; Pro từ 10.000đ.',
     navHow: 'Cách hoạt động', navUse: 'Ví dụ thực tế', navPrice: 'Chi phí', navGuide: 'Hướng dẫn kết nối', navFaq: 'Hỏi đáp', navDownload: 'Dùng thử miễn phí',
     eyebrow: 'Bạn chỉ cần chỉ chỗ. ChatGPT lo phần còn lại.',
     heroTitle: 'Bạn chỉ cần chỉ chỗ cho ChatGPT Web. Việc được làm ngay trên máy của bạn.',
     heroText: 'Không còn phải tải lên từng file. Chỉ cần copy đường dẫn file hoặc thư mục trên PC, dán thẳng vào ChatGPT và nói kết quả bạn muốn. Desktop Coworker giúp ChatGPT đọc, đối chiếu, sắp xếp và xử lý ngay trên máy của bạn.',
-    heroPill1: 'Windows & macOS', heroPill2: 'Dùng thử miễn phí', heroPill3: 'Bắt đầu từ 10.000đ',
+    heroPill1: 'Windows & macOS', heroPill2: 'Dùng thử miễn phí 3 ngày', heroPill3: 'Pro từ 10.000đ / 7 ngày',
     heroPrimary: 'Chọn bản tải miễn phí', heroSecondary: 'Xem ví dụ thực tế',
-    heroNote: 'Dùng thử miễn phí · Bắt đầu trả phí từ 10.000đ · Chi tiết gói xem ngay trong app',
+    heroNote: 'Dùng thử miễn phí 3 ngày · Pro 7 ngày từ 10.000đ · Nâng cấp ngay trong app',
     heroConnected: 'Đã kết nối', chatMockSub: 'Desktop Coworker đã kết nối',
     screenPrompt: 'Các báo cáo ở đây D:\\BaoCao\\Thang8\\. Đọc toàn bộ, tìm những điểm quan trọng và làm cho tôi một bản tổng hợp ngắn gọn. Lưu thành file mới, không sửa file gốc.',
     chatWorked: 'Worked for 2m 14s', chatTool1: 'Đọc 12 file trong thư mục', chatTool2: 'Đối chiếu dữ liệu và tìm điểm đáng chú ý', chatTool3: 'Tạo file báo cáo mới',
@@ -58,35 +58,36 @@ const copy = {
     safetyText: 'Không cần mở toàn bộ máy tính. Bạn có thể giới hạn đúng thư mục cần làm và chọn mức kiểm soát phù hợp với từng công việc.',
     safety1: 'Chỉ mở những thư mục bạn cho phép.', safety2: 'Có thể quay lại trước thay đổi nếu cần.', safety3: 'Việc quan trọng có thể yêu cầu bạn duyệt trước.', safety4: 'Tách riêng từng tài khoản và kết nối trên cùng một máy.',
     priceEyebrow: 'CỨ THỬ TRƯỚC',
-    priceTitle: 'Dùng thử miễn phí. Hợp thì dùng tiếp từ 10.000đ.',
-    priceText: 'Không cần đọc cả bảng giá trước khi biết sản phẩm có giúp được mình hay không. Tải về, thử bằng việc thật; khi cần dùng tiếp, chọn gói ngay trong app.',
-    priceChip1: '✓ Dùng thử miễn phí', priceChip2: '🎉 Ưu đãi ra mắt từ 10.000đ', priceChip3: '✓ Nâng cấp ngay trong app',
-    launchOfferBadge: 'ƯU ĐÃI RA MẮT', countdownLead: 'Ưu đãi kết thúc sau',
-    countdownDays: 'ngày', countdownHours: 'giờ', countdownMinutes: 'phút', countdownSeconds: 'giây',
-    priceStartLabel: 'Bắt đầu trả phí chỉ từ', priceStartText: 'Cho toàn bộ tính năng.', priceDetailText: 'Chi tiết thời hạn và các gói khác xem ngay trong ứng dụng.', priceCta: 'Tải và dùng thử miễn phí',
+    priceTitle: 'Dùng thử miễn phí 3 ngày. Sau đó chọn đúng thời hạn bạn cần.',
+    priceText: 'Các gói Pro dùng cùng bộ tính năng và khác nhau ở thời hạn sử dụng. Bạn chọn 7 ngày, 30 ngày hoặc 365 ngày ngay trong ứng dụng.',
+    priceChip1: '✓ Dùng thử 3 ngày', priceChip2: '✓ Gói 7 / 30 / 365 ngày', priceChip3: '✓ Kích hoạt tự động sau thanh toán',
+    plan7Title: 'Pro · 7 ngày', plan7Price: '10.000đ', plan7Meta: 'Gói ngắn hạn',
+    plan30Title: 'Pro · 30 ngày', plan30Price: '100.000đ', plan30Meta: 'Gói 1 tháng',
+    plan365Title: 'Pro · 365 ngày', plan365Price: '999.000đ', plan365Meta: 'Gói 1 năm',
+    pricingNote: 'Giá thanh toán cuối cùng, bao gồm voucher hoặc ưu đãi nếu có, luôn được xác nhận trong ứng dụng trước khi tạo QR.', priceCta: 'Tải và dùng thử 3 ngày',
     faqEyebrow: 'HỎI NHANH', faqTitle: 'Những điều nên biết trước khi cài.',
     faq1Q: 'Tôi có cần biết code hay MCP không?', faq1A: 'Không. Khi sử dụng, bạn chủ yếu nói việc muốn làm bằng ngôn ngữ bình thường. Phần kết nối ban đầu đã có hướng dẫn từng bước.',
     faq2Q: 'Tôi cần máy và tài khoản gì?', faq2A: 'Ứng dụng có bản Windows 10/11 x64 và macOS Apple Silicon. Bạn cần tài khoản ChatGPT có thể bật Developer mode và dùng kết nối tương ứng; khả năng này có thể phụ thuộc gói hoặc chính sách workspace của tài khoản ChatGPT.',
-    faq3Q: 'Dùng thử miễn phí có tự hết khi tôi không dùng không?', faq3A: 'Không theo cách một gói 24 giờ theo đồng hồ. Bản hiện tại tính theo thời gian Desktop Coworker thực sự chạy; khi bạn không dùng, thời lượng không tự trôi.',
+    faq3Q: 'Dùng thử miễn phí 3 ngày được tính thế nào?', faq3A: 'Theo chính sách mới, thời gian dùng thử được tính theo ngày lịch kể từ khi trial được kích hoạt. Đóng ứng dụng hoặc dừng kết nối không làm tạm dừng thời hạn.',
     faq4Q: 'Thanh toán xong có phải chờ duyệt thủ công không?', faq4A: 'Không theo flow hiện tại. Bạn quét QR hoặc chuyển khoản đúng số tiền và nội dung; hệ thống xác nhận rồi kích hoạt Pro tự động.',
     faq5Q: 'Tôi có thể giới hạn ChatGPT chỉ làm trong một thư mục không?', faq5A: 'Có. Bạn có thể giới hạn phạm vi file theo từng kết nối và bật thêm cơ chế duyệt thao tác nếu muốn kiểm soát chặt hơn.',
     faqMultiQ: 'Một máy có thể dùng nhiều tài khoản ChatGPT không?', faqMultiA: 'Có. Control Center quản lý nhiều tài khoản và kết nối riêng trên cùng một máy; bạn có thể bật hoặc dừng từng tài khoản độc lập.',
     faq6Q: 'Sản phẩm này có phải của OpenAI không?', faq6A: 'Không. Đây là dự án độc lập dành cho ChatGPT và không liên kết hay được OpenAI chứng thực.',
     finalEyebrow: 'ĐỪNG MUA VÌ DANH SÁCH TÍNH NĂNG', finalTitle: 'Hãy thử bằng đúng việc bạn đang ngại làm hôm nay.',
-    finalText: 'Nếu Desktop Coworker không giúp bạn bớt thao tác thật, bạn không cần mua. Nếu hợp, bạn có thể dùng tiếp chỉ từ 10.000đ.',
-    finalPrimary: 'Dùng thử miễn phí', finalSecondary: 'Xem hướng dẫn cài đặt',
-    footerNote: 'Dự án độc lập, không liên kết hoặc được OpenAI chứng thực.', footerVersion: 'Chi tiết gói và thanh toán hiển thị trong ứng dụng.'
+    finalText: 'Nếu Desktop Coworker không giúp bạn bớt thao tác thật, bạn không cần mua. Nếu hợp, bạn có thể chọn Pro 7 ngày từ 10.000đ hoặc các gói 30 và 365 ngày.',
+    finalPrimary: 'Dùng thử miễn phí 3 ngày', finalSecondary: 'Xem hướng dẫn cài đặt',
+    footerNote: 'Dự án độc lập, không liên kết hoặc được OpenAI chứng thực.', footerVersion: 'Giá hiện tại: 7 ngày 10.000đ · 30 ngày 100.000đ · 365 ngày 999.000đ.'
   },
   en: {
     metaTitle: 'Desktop Coworker for ChatGPT — Point ChatGPT to the files on your PC',
-    metaDescription: 'No more uploading files one by one. Point ChatGPT to a folder or document on your PC and describe the result you want. Try free, then continue from ₫10,000.',
+    metaDescription: 'No more uploading files one by one. Point ChatGPT to a folder or document on your PC and describe the result you want. Try free for 3 days; Pro starts at ₫10,000.',
     navHow: 'How it works', navUse: 'Real examples', navPrice: 'Cost', navGuide: 'Connection guide', navFaq: 'FAQ', navDownload: 'Try free',
     eyebrow: 'Just point ChatGPT to the right place. It handles the rest.',
     heroTitle: 'Point ChatGPT Web to the right place. Get the work done on your computer.',
     heroText: 'No more uploading files one by one. Copy the file or folder path from your PC, paste it directly into ChatGPT, and describe the result you want. Desktop Coworker helps ChatGPT read, compare, organize, and handle the work on your computer.',
-    heroPill1: 'Windows & macOS', heroPill2: 'Try free', heroPill3: 'Paid plans from ₫10,000',
+    heroPill1: 'Windows & macOS', heroPill2: '3-day free trial', heroPill3: 'Pro from ₫10,000 / 7 days',
     heroPrimary: 'Choose your free download', heroSecondary: 'See real examples',
-    heroNote: 'Try free · Paid plans start at ₫10,000 · Full plan details are shown in the app',
+    heroNote: 'Try free for 3 days · 7-day Pro from ₫10,000 · Upgrade in the app',
     heroConnected: 'Connected', chatMockSub: 'Desktop Coworker connected',
     screenPrompt: 'The reports are here D:\\Reports\\August\\. Read them all, pull out the important points, and make me a short summary. Save it as a new file and leave the originals unchanged.',
     chatWorked: 'Worked for 2m 14s', chatTool1: 'Read 12 files in the folder', chatTool2: 'Compare data and find notable points', chatTool3: 'Create a new report file',
@@ -134,24 +135,25 @@ const copy = {
     safetyText: 'You do not have to expose the whole computer. Limit access to the folder that matters and choose the level of control that fits the task.',
     safety1: 'Open only the folders you allow.', safety2: 'Roll back to before a change when needed.', safety3: 'Require your approval for important actions.', safety4: 'Keep separate accounts and connections on the same machine.',
     priceEyebrow: 'TRY IT FIRST',
-    priceTitle: 'Try it free. Keep going from only ₫10,000 if it helps.',
-    priceText: 'You do not need a full pricing table before you know whether the product is useful. Download it, try a real task, then choose a plan in the app only when you need more.',
-    priceChip1: '✓ Try free', priceChip2: '🎉 Launch offer from ₫10,000', priceChip3: '✓ Upgrade in the app',
-    launchOfferBadge: 'LAUNCH OFFER', countdownLead: 'Offer ends in',
-    countdownDays: 'days', countdownHours: 'hours', countdownMinutes: 'mins', countdownSeconds: 'secs',
-    priceStartLabel: 'Paid plans start at', priceStartText: 'All features included.', priceDetailText: 'Plan duration and other options are shown inside the app.', priceCta: 'Download and try free',
+    priceTitle: 'Try it free for 3 days. Then choose the duration you need.',
+    priceText: 'All Pro plans include the same feature set and differ by duration. Choose 7 days, 30 days, or 365 days directly in the app.',
+    priceChip1: '✓ 3-day free trial', priceChip2: '✓ 7 / 30 / 365-day plans', priceChip3: '✓ Automatic activation after payment',
+    plan7Title: 'Pro · 7 days', plan7Price: '₫10,000', plan7Meta: 'Short-term plan',
+    plan30Title: 'Pro · 30 days', plan30Price: '₫100,000', plan30Meta: '1-month plan',
+    plan365Title: 'Pro · 365 days', plan365Price: '₫999,000', plan365Meta: '1-year plan',
+    pricingNote: 'The final checkout price, including any applicable voucher or promotion, is confirmed in the app before the QR is created.', priceCta: 'Download and try 3 days free',
     faqEyebrow: 'QUICK ANSWERS', faqTitle: 'What to know before installing.',
     faq1Q: 'Do I need to know code or MCP?', faq1A: 'No. You mainly describe the result you want in normal language. The initial connection process has a guided step-by-step flow.',
     faq2Q: 'What computer and ChatGPT account do I need?', faq2A: 'There are builds for Windows 10/11 x64 and macOS Apple Silicon. You need a ChatGPT account that can enable Developer mode and use the required connection flow; availability can depend on your plan or workspace policy.',
-    faq3Q: 'Does the free trial expire while I am not using it?', faq3A: 'Not like a 24-hour wall-clock trial. The current build counts actual Desktop Coworker runtime, so the allowance does not simply tick away while you are not using it.',
+    faq3Q: 'How does the 3-day free trial work?', faq3A: 'Under the new policy, the trial runs for three calendar days from activation. Closing the app or stopping a connection does not pause the deadline.',
     faq4Q: 'Do I have to wait for manual approval after paying?', faq4A: 'Not in the current flow. Pay the exact amount and transfer content shown by QR or bank transfer; the system confirms payment and activates Pro automatically.',
     faq5Q: 'Can I restrict ChatGPT to one folder?', faq5A: 'Yes. File-access scope can be configured per connection, and you can also require approval for higher-impact actions.',
     faqMultiQ: 'Can one computer use multiple ChatGPT accounts?', faqMultiA: 'Yes. Control Center can manage multiple separate accounts and connections on the same machine, and each one can be started or stopped independently.',
     faq6Q: 'Is this an OpenAI product?', faq6A: 'No. This is an independent project built for ChatGPT and is not affiliated with or endorsed by OpenAI.',
     finalEyebrow: 'DO NOT BUY A FEATURE LIST', finalTitle: 'Try it on the task you are avoiding today.',
-    finalText: 'If Desktop Coworker does not remove real work from your plate, you do not need to buy it. If it helps, paid use starts from ₫10,000.',
-    finalPrimary: 'Try free', finalSecondary: 'Read the installation guide',
-    footerNote: 'Independent project; not affiliated with or endorsed by OpenAI.', footerVersion: 'Plan and payment details are shown in the app.'
+    finalText: 'If Desktop Coworker does not remove real work from your plate, you do not need to buy it. If it helps, choose 7-day Pro from ₫10,000 or the 30- and 365-day plans.',
+    finalPrimary: 'Try 3 days free', finalSecondary: 'Read the installation guide',
+    footerNote: 'Independent project; not affiliated with or endorsed by OpenAI.', footerVersion: 'Current pricing: 7 days ₫10,000 · 30 days ₫100,000 · 365 days ₫999,000.'
   }
 };
 
@@ -450,29 +452,8 @@ const windowsReleaseVersion = '1.9.1';
 const windowsDownloadUrl = `https://github.com/colin-dmme/desktop-coworker-releases/releases/download/v${windowsReleaseVersion}/DesktopCoworker-Payment-Setup-${windowsReleaseVersion}-x64.exe`;
 const macDownloadUrl = `${releaseRepoUrl}/releases`;
 const installGuideUrl = 'https://colin-dmme.github.io/desktop-coworker-for-chatgpt/install/';
-const launchOfferEndsAt = new Date('2026-10-07T23:59:59+07:00').getTime();
 let currentLang = 'vi';
 let activeCaseId = 'contract';
-
-function updateLaunchCountdown() {
-  const remaining = Math.max(0, launchOfferEndsAt - Date.now());
-  const days = Math.floor(remaining / 86400000);
-  const hours = Math.floor((remaining % 86400000) / 3600000);
-  const minutes = Math.floor((remaining % 3600000) / 60000);
-  const seconds = Math.floor((remaining % 60000) / 1000);
-
-  const values = {
-    '[data-countdown-days]': String(days),
-    '[data-countdown-hours]': String(hours).padStart(2, '0'),
-    '[data-countdown-minutes]': String(minutes).padStart(2, '0'),
-    '[data-countdown-seconds]': String(seconds).padStart(2, '0')
-  };
-
-  Object.entries(values).forEach(([selector, value]) => {
-    const node = document.querySelector(selector);
-    if (node) node.textContent = value;
-  });
-}
 
 function renderCase(caseId = activeCaseId) {
   const studies = caseStudies[currentLang];
@@ -666,5 +647,3 @@ document.querySelectorAll('[data-download-mac]').forEach((link) => link.setAttri
 document.querySelectorAll('[data-install-guide]').forEach((link) => link.setAttribute('href', installGuideUrl));
 
 setLanguage(initialLanguage());
-updateLaunchCountdown();
-setInterval(updateLaunchCountdown, 1000);
