@@ -419,38 +419,44 @@
           <div class="overflow-hidden rounded-[2rem] border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-7 shadow-sm sm:p-10 lg:p-12">
             <div class="mx-auto max-w-4xl text-center">
               <p data-i18n="priceEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-600">CỨ THỬ TRƯỚC</p>
-              <h2 data-i18n="priceTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Dùng thử miễn phí 3 ngày. Sau đó chọn đúng thời hạn bạn cần.</h2>
-              <p data-i18n="priceText" class="mx-auto mt-5 max-w-3xl text-lg leading-8 text-slate-600">Các gói Pro dùng cùng bộ tính năng và khác nhau ở thời hạn sử dụng. Bạn chọn 7 ngày, 30 ngày hoặc 365 ngày ngay trong ứng dụng.</p>
+              <h2 data-i18n="priceTitle" class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Dùng thử trước. Khi cần dùng tiếp, chọn gói phù hợp.</h2>
+              <p data-i18n="priceText" class="mx-auto mt-5 max-w-3xl text-lg leading-8 text-slate-600">Giá gói Pro bên dưới được đồng bộ trực tiếp từ catalog thanh toán đang dùng trong Desktop Coworker.</p>
               <div class="mt-6 flex flex-wrap justify-center gap-3 text-sm font-semibold text-slate-700">
-                <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip1">✓ Dùng thử 3 ngày</span>
-                <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip2">✓ Gói 7 / 30 / 365 ngày</span>
+                <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip1">✓ Dùng thử miễn phí</span>
+                <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip2">✓ Gói 7 ngày / 1 tháng / 1 năm</span>
                 <span class="rounded-full border border-slate-200 bg-white px-4 py-2" data-i18n="priceChip3">✓ Kích hoạt tự động sau thanh toán</span>
               </div>
             </div>
 
             <div class="mt-10 grid gap-5 md:grid-cols-3">
-              <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-7">
-                <p data-i18n="plan7Meta" class="text-xs font-black uppercase tracking-[0.14em] text-slate-500">Gói ngắn hạn</p>
-                <h3 data-i18n="plan7Title" class="mt-3 text-xl font-black text-slate-950">Pro · 7 ngày</h3>
-                <div data-i18n="plan7Price" class="mt-5 text-4xl font-black tracking-tight text-blue-700">10.000đ</div>
+              <article data-plan-id="pro-7d" class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-7">
+                <p data-plan-badge class="text-xs font-black uppercase tracking-[0.14em] text-slate-500">Trải nghiệm</p>
+                <h3 data-plan-title class="mt-3 text-xl font-black text-slate-950">Gói Pro 7 ngày</h3>
+                <p data-plan-description class="mt-2 min-h-12 text-sm leading-6 text-slate-500">Trải nghiệm đầy đủ tính năng Pro trong 7 ngày</p>
+                <div data-plan-list-price class="mt-4 text-sm font-semibold text-slate-400 line-through">99.000 đ</div>
+                <div data-plan-price class="mt-1 text-4xl font-black tracking-tight text-blue-700">50.000 đ</div>
               </article>
 
-              <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-7">
-                <p data-i18n="plan30Meta" class="text-xs font-black uppercase tracking-[0.14em] text-slate-500">Gói 1 tháng</p>
-                <h3 data-i18n="plan30Title" class="mt-3 text-xl font-black text-slate-950">Pro · 30 ngày</h3>
-                <div data-i18n="plan30Price" class="mt-5 text-4xl font-black tracking-tight text-blue-700">100.000đ</div>
+              <article data-plan-id="pro-1m" class="rounded-3xl border-2 border-violet-500 bg-white p-6 shadow-[0_18px_45px_rgba(124,58,237,.10)] sm:p-7">
+                <p data-plan-badge class="text-xs font-black uppercase tracking-[0.14em] text-violet-600">Phổ biến nhất</p>
+                <h3 data-plan-title class="mt-3 text-xl font-black text-slate-950">Gói Pro 1 tháng</h3>
+                <p data-plan-description class="mt-2 min-h-12 text-sm leading-6 text-slate-500">Linh hoạt cho nhu cầu sử dụng thường xuyên</p>
+                <div data-plan-list-price class="mt-4 text-sm font-semibold text-slate-400 line-through">299.000 đ</div>
+                <div data-plan-price class="mt-1 text-4xl font-black tracking-tight text-violet-700">150.000 đ</div>
               </article>
 
-              <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-7">
-                <p data-i18n="plan365Meta" class="text-xs font-black uppercase tracking-[0.14em] text-slate-500">Gói 1 năm</p>
-                <h3 data-i18n="plan365Title" class="mt-3 text-xl font-black text-slate-950">Pro · 365 ngày</h3>
-                <div data-i18n="plan365Price" class="mt-5 text-4xl font-black tracking-tight text-blue-700">999.000đ</div>
+              <article data-plan-id="pro-1y" class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-7">
+                <p data-plan-badge class="text-xs font-black uppercase tracking-[0.14em] text-slate-500">Tiết kiệm nhất</p>
+                <h3 data-plan-title class="mt-3 text-xl font-black text-slate-950">Gói Pro 1 năm</h3>
+                <p data-plan-description class="mt-2 min-h-12 text-sm leading-6 text-slate-500">Tiết kiệm 33% so với trả theo tháng</p>
+                <div data-plan-list-price class="mt-4 text-sm font-semibold text-slate-400 line-through">2.399.000 đ</div>
+                <div data-plan-price class="mt-1 text-4xl font-black tracking-tight text-blue-700">1.200.000 đ</div>
               </article>
             </div>
 
-            <p data-i18n="pricingNote" class="mx-auto mt-7 max-w-3xl text-center text-sm leading-6 text-slate-500">Giá thanh toán cuối cùng, bao gồm voucher hoặc ưu đãi nếu có, luôn được xác nhận trong ứng dụng trước khi tạo QR.</p>
+            <p data-i18n="pricingNote" class="mx-auto mt-7 max-w-3xl text-center text-sm leading-6 text-slate-500">Giá niêm yết và giá hiện tại được lấy từ catalog thanh toán. Voucher hoặc ưu đãi bổ sung, nếu có, sẽ được xác nhận trong app trước khi tạo QR.</p>
             <div class="mt-7 text-center">
-              <a href="#download" class="focus-ring inline-flex items-center justify-center rounded-2xl bg-blue-600 px-6 py-3.5 font-black text-white shadow-sm transition hover:bg-blue-700" data-i18n="priceCta">Tải và dùng thử 3 ngày</a>
+              <a href="#download" class="focus-ring inline-flex items-center justify-center rounded-2xl bg-blue-600 px-6 py-3.5 font-black text-white shadow-sm transition hover:bg-blue-700" data-i18n="priceCta">Tải và dùng thử miễn phí</a>
             </div>
           </div>
         </div>
@@ -464,7 +470,7 @@
         <div class="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white px-6 shadow-sm sm:px-8">
           <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq1Q">Tôi có cần biết code hay MCP không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq1A" class="pb-6 pr-10 leading-7 text-slate-600">Không. Landing này cố tình không bắt bạn học thuật ngữ kỹ thuật. Khi sử dụng, bạn chủ yếu nói việc muốn làm bằng ngôn ngữ bình thường. Phần kết nối ban đầu đã có wizard từng bước.</p></details>
           <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq2Q">Tôi cần máy và tài khoản gì?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq2A" class="pb-6 pr-10 leading-7 text-slate-600">Ứng dụng dành cho Windows. Bạn cần tài khoản ChatGPT có thể bật Developer mode và dùng kết nối tương ứng; khả năng này có thể phụ thuộc gói hoặc chính sách workspace của tài khoản ChatGPT.</p></details>
-          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq3Q">Dùng thử miễn phí 3 ngày được tính thế nào?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq3A" class="pb-6 pr-10 leading-7 text-slate-600">Theo chính sách mới, thời gian dùng thử được tính theo ngày lịch kể từ khi trial được kích hoạt. Đóng ứng dụng hoặc dừng kết nối không làm tạm dừng thời hạn.</p></details>
+          <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq3Q">Dùng thử miễn phí được tính thế nào?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq3A" class="pb-6 pr-10 leading-7 text-slate-600">Ứng dụng sẽ hiển thị chính sách và thời lượng dùng thử đang áp dụng cho tài khoản của bạn. Khi hết thời gian thử, bạn có thể chọn một gói Pro để tiếp tục.</p></details>
           <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq4Q">Thanh toán xong có phải chờ duyệt thủ công không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq4A" class="pb-6 pr-10 leading-7 text-slate-600">Không theo flow hiện tại. Bạn quét QR hoặc chuyển khoản đúng số tiền và nội dung; hệ thống xác nhận rồi kích hoạt Pro tự động.</p></details>
           <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faq5Q">Tôi có thể giới hạn ChatGPT chỉ làm trong một thư mục không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faq5A" class="pb-6 pr-10 leading-7 text-slate-600">Có. Bạn có thể cấu hình phạm vi file theo từng connection và dùng thêm cơ chế duyệt thao tác nếu muốn kiểm soát chặt hơn.</p></details>
           <details class="group border-b border-slate-200 py-1"><summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-5 rounded-xl py-5 text-left text-lg font-bold text-slate-900"><span data-i18n="faqMultiQ">Một máy có thể dùng nhiều tài khoản ChatGPT không?</span><span class="faq-plus text-2xl font-light text-slate-400">+</span></summary><p data-i18n="faqMultiA" class="pb-6 pr-10 leading-7 text-slate-600">Có. Control Center quản lý nhiều tài khoản và kết nối riêng trên cùng một máy; bạn có thể bật hoặc dừng từng tài khoản độc lập.</p></details>
@@ -479,9 +485,9 @@
           <div class="relative mx-auto max-w-4xl">
             <p data-i18n="finalEyebrow" class="text-xs font-black tracking-[0.18em] text-blue-100">ĐỪNG MUA VÌ DANH SÁCH TÍNH NĂNG</p>
             <h2 data-i18n="finalTitle" class="mt-4 text-3xl font-black tracking-[-0.035em] sm:text-5xl">Hãy thử bằng đúng việc bạn đang ngại làm hôm nay.</h2>
-            <p data-i18n="finalText" class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-blue-50">Nếu Desktop Coworker không giúp bạn bớt thao tác thật, bạn không cần mua. Nếu hợp, bạn có thể chọn Pro 7 ngày từ 10.000đ hoặc các gói 30 và 365 ngày.</p>
+            <p data-i18n="finalText" class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-blue-50">Nếu Desktop Coworker không giúp bạn bớt thao tác thật, bạn không cần mua. Nếu hợp, bạn có thể chọn gói 7 ngày, 1 tháng hoặc 1 năm ngay trong ứng dụng.</p>
             <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <a href="#download" class="focus-ring rounded-2xl bg-white px-6 py-4 font-black text-blue-700 shadow-sm transition hover:bg-blue-50" data-i18n="finalPrimary">Dùng thử miễn phí 3 ngày</a>
+              <a href="#download" class="focus-ring rounded-2xl bg-white px-6 py-4 font-black text-blue-700 shadow-sm transition hover:bg-blue-50" data-i18n="finalPrimary">Dùng thử miễn phí</a>
               <a data-install-guide target="_blank" rel="noopener" class="focus-ring rounded-2xl border border-white/30 bg-white/10 px-6 py-4 font-bold text-white transition hover:bg-white/20" data-i18n="finalSecondary">Xem hướng dẫn cài đặt</a>
             </div>
           </div>
@@ -493,7 +499,7 @@
       <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
         <div>© 2026 Desktop Coworker for ChatGPT</div>
         <div class="text-center" data-i18n="footerNote">Dự án độc lập, không liên kết hoặc được OpenAI chứng thực.</div>
-        <div data-i18n="footerVersion">Giá hiện tại: 7 ngày 10.000đ · 30 ngày 100.000đ · 365 ngày 999.000đ.</div>
+        <div data-i18n="footerVersion">Giá gói Pro được đồng bộ theo catalog thanh toán hiện hành.</div>
       </div>
     </footer>
 
