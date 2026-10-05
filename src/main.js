@@ -44,7 +44,7 @@ const copy = {
     downloadTitle: 'Tải Desktop Coworker miễn phí.',
     downloadText: 'Hai bản dùng cùng tài khoản và cùng tính năng. Chỉ cần chọn đúng hệ điều hành bạn đang dùng.',
     downloadRecommended: 'Bản phổ biến',
-    windowsMeta: 'Windows 10/11 · 64-bit · v1.9.1', windowsDownloadText: 'Bộ cài .exe dành cho máy Windows x64.', windowsDownloadCta: 'Tải cho Windows',
+    windowsMeta: 'Windows 10/11 · 64-bit · v1.10.0', windowsDownloadText: 'Bộ cài .exe dành cho máy Windows x64.', windowsDownloadCta: 'Tải cho Windows',
     windowsNoticeTitle: 'Lưu ý khi cài trên Windows', windowsNoticeText: 'Bộ cài hiện chưa được ký số nên Windows SmartScreen có thể hiện cảnh báo “Windows đã bảo vệ máy tính của bạn”. Chọn “Thông tin thêm” (More info) rồi “Vẫn chạy” (Run anyway) để tiếp tục.',
     macMeta: 'Apple Silicon · M1/M2/M3/M4 trở lên', macDownloadText: 'Kho phát hành hiện chưa có file .dmg cho macOS. Mở GitHub Releases để kiểm tra khi có bản mới.', macDownloadCta: 'Xem GitHub Releases',
     macNoticeTitle: 'Lưu ý khi cài trên macOS', macNoticeText: 'Bản hiện tại chưa ký Developer ID/notarize nên macOS có thể chặn lần mở đầu tiên. Nhấp phải vào ứng dụng → Open; nếu vẫn bị chặn, vào System Settings → Privacy & Security → Open Anyway.',
@@ -121,7 +121,7 @@ const copy = {
     downloadTitle: 'Download Desktop Coworker for free.',
     downloadText: 'Both builds use the same account and features. Choose the operating system you use.',
     downloadRecommended: 'Most common',
-    windowsMeta: 'Windows 10/11 · 64-bit · v1.9.1', windowsDownloadText: 'The .exe installer for Windows x64.', windowsDownloadCta: 'Download for Windows',
+    windowsMeta: 'Windows 10/11 · 64-bit · v1.10.0', windowsDownloadText: 'The .exe installer for Windows x64.', windowsDownloadCta: 'Download for Windows',
     windowsNoticeTitle: 'Windows installation note', windowsNoticeText: 'The installer is not code-signed yet, so Windows SmartScreen may show “Windows protected your PC”. Choose “More info” and then “Run anyway” to continue.',
     macMeta: 'Apple Silicon · M1/M2/M3/M4 or newer', macDownloadText: 'The release repository does not currently include a macOS .dmg. Open GitHub Releases to check for a newer build.', macDownloadCta: 'View GitHub Releases',
     macNoticeTitle: 'macOS installation note', macNoticeText: 'The current build is not Developer ID signed/notarized yet, so macOS may block the first launch. Right-click the app → Open; if it is still blocked, go to System Settings → Privacy & Security → Open Anyway.',
@@ -448,7 +448,7 @@ const caseFlows = {
 };
 
 const releaseRepoUrl = 'https://github.com/colin-dmme/desktop-coworker-releases';
-const windowsReleaseVersion = '1.9.1';
+const windowsReleaseVersion = '1.10.0';
 const windowsDownloadUrl = `https://github.com/colin-dmme/desktop-coworker-releases/releases/download/v${windowsReleaseVersion}/DesktopCoworker-Payment-Setup-${windowsReleaseVersion}-x64.exe`;
 const macDownloadUrl = `${releaseRepoUrl}/releases`;
 const installGuideUrl = 'https://colin-dmme.github.io/desktop-coworker-for-chatgpt/install/';
